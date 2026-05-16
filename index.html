@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Socio-Economic Development of Dalimbari Gaon | R. Sangma | B.A. 4th Sem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --pink1: #ff85c2;
+      --pink2: #f759ab;
+      --pink3: #eb2f96;
+      --pink4: #c41d7f;
+      --light: #fff0f6;
+      --glass: rgba(255, 182, 217, 0.18);
+      --glass-border: rgba(255, 105, 180, 0.35);
+      --glass-strong: rgba(255, 220, 237, 0.28);
+      --text-dark: #4a0028;
+      --text-mid: #7a1450;
+      --text-light: #fff0f6;
+      --shadow: 0 8px 32px rgba(235, 47, 150, 0.18);
+      --shadow-strong: 0 12px 48px rgba(196, 29, 127, 0.28);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1a0010 0%, #3d0030 20%, #6b0050 40%, #9c1068 55%, #c4317e 70%, #e8668d 85%, #ffb3d0 100%);
+      min-height: 100vh;
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ======================== GLOBAL WATERMARK ======================== */
+    .global-watermark {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 500;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .watermark-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.5rem, 10vw, 8rem);
+      font-weight: 900;
+      font-style: italic;
+      color: rgba(255, 105, 180, 0.10);
+      transform: rotate(-35deg);
+      white-space: nowrap;
+      letter-spacing: 0.05em;
+      text-shadow: 0 0 60px rgba(255, 105, 180, 0.06);
+      user-select: none;
+      line-height: 1;
+    }
+
+    /* Tiled watermark for all pages */
+    .watermark-tiled {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 500;
+      overflow: hidden;
+      background-image: repeating-linear-gradient(
+        transparent 0px,
+        transparent 180px,
+        transparent 180px
+      );
+    }
+
+    .watermark-tile-inner {
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      width: 140%;
+      height: 140%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      align-items: center;
+      justify-items: center;
+      transform: rotate(-30deg);
+      pointer-events: none;
+    }
+
+    .watermark-tile-item {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3.5vw, 2.8rem);
+      font-weight: 900;
+      font-style: italic;
+      color: rgba(255, 105, 180, 0.11);
+      white-space: nowrap;
+      padding: 40px 30px;
+      user-select: none;
+      letter-spacing: 0.04em;
+    }
+
+    /* Floating particles background */
+    #particles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,182,217,0.7), rgba(255,105,180,0.1));
+      animation: float-particle linear infinite;
+    }
+
+    @keyframes float-particle {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 0.6; }
+      100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(80, 0, 50, 0.55);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 0 20px;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffb3d0;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 6px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #ffd6ea;
+      text-decoration: none;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 20px;
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255,105,180,0.25);
+      border-color: var(--glass-border);
+      color: #fff;
+    }
+
+    /* Main wrapper */
+    .main-wrapper {
+      position: relative;
+      z-index: 1;
+      padding-top: 70px;
+    }
+
+    /* Sections */
+    .page-section {
+      min-height: 100vh;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Glass card */
+    .glass-card {
+      background: var(--glass-strong);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      box-shadow: var(--shadow-strong), inset 0 1px 0 rgba(255,255,255,0.2);
+      padding: 48px 52px;
+      max-width: 900px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff85c2, #f759ab, #ff85c2, transparent);
+    }
+
+    .glass-card-wide {
+      max-width: 1100px;
+    }
+
+    /* Section titles */
+    .section-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      font-weight: 900;
+      color: rgba(255,105,180,0.12);
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(255,105,180,0.3), rgba(247,89,171,0.2));
+      border: 1px solid rgba(255,105,180,0.5);
+      border-radius: 30px;
+      padding: 6px 20px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #ffb3d0;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #fff0f6;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #ffb3d0;
+      margin-bottom: 28px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #ff85c2, #f759ab, #eb2f96);
+      border-radius: 2px;
+      margin: 20px 0;
+    }
+
+    /* Text styles */
+    .body-text {
+      font-size: 0.95rem;
+      line-height: 1.9;
+      color: #ffe4f0;
+      font-weight: 300;
+    }
+
+    .body-text strong {
+      color: #ffb3d0;
+      font-weight: 600;
+    }
+
+    .highlight-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #ffd6ea;
+      font-style: italic;
+    }
+
+    /* ==================== PAGE 1: COVER ==================== */
+    #cover {
+      background: none;
+      position: relative;
+    }
+
+    .cover-card {
+      background: rgba(80, 0, 50, 0.45);
+      backdrop-filter: blur(32px);
+      -webkit-backdrop-filter: blur(32px);
+      border: 1px solid rgba(255, 105, 180, 0.4);
+      border-radius: 32px;
+      padding: 70px 60px;
+      max-width: 820px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 80px rgba(196,29,127,0.35), inset 0 1px 0 rgba(255,255,255,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-card::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(ellipse at center, rgba(255,105,180,0.08) 0%, transparent 60%);
+      animation: pulse-glow 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+
+    .cover-emblem {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, rgba(255,105,180,0.3), rgba(247,89,171,0.2));
+      border: 2px solid rgba(255,105,180,0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      box-shadow: 0 0 40px rgba(255,105,180,0.3);
+    }
+
+    .cover-institution {
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #ff85c2;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .cover-main-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: #fff0f6;
+      line-height: 1.2;
+      margin: 16px 0;
+      text-shadow: 0 2px 20px rgba(255,105,180,0.4);
+    }
+
+    .cover-subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #ffb3d0;
+      margin-bottom: 28px;
+    }
+
+    .cover-meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .cover-meta-item {
+      background: rgba(255,105,180,0.12);
+      border: 1px solid rgba(255,105,180,0.25);
+      border-radius: 14px;
+      padding: 14px 18px;
+      text-align: left;
+    }
+
+    .cover-meta-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #ff85c2;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .cover-meta-value {
+      font-size: 0.9rem;
+      color: #ffe4f0;
+      font-weight: 500;
+    }
+
+    .cover-line {
+      width: 60%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #ff85c2, transparent);
+      margin: 24px auto;
+    }
+
+    /* ==================== PAGE 2: CERTIFICATE ==================== */
+    .certificate-border {
+      border: 3px solid transparent;
+      background: linear-gradient(var(--glass-strong), var(--glass-strong)) padding-box,
+                  linear-gradient(135deg, #ff85c2, #f759ab, #eb2f96, #f759ab, #ff85c2) border-box;
+      border-radius: 24px;
+      padding: 4px;
+    }
+
+    .certificate-inner {
+      background: rgba(60,0,40,0.55);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 52px 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    .cert-watermark {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12rem;
+      opacity: 0.04;
+      font-family: 'Playfair Display', serif;
+      pointer-events: none;
+      color: #ff85c2;
+    }
+
+    .cert-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ff85c2;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .cert-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: #ffd6ea;
+      line-height: 2;
+      margin: 20px 0;
+    }
+
+    .cert-body span {
+      color: #ffb3d0;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .cert-signature-row {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .cert-signature {
+      text-align: center;
+    }
+
+    .sig-line {
+      width: 160px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff85c2, transparent);
+      margin: 0 auto 8px;
+    }
+
+    .sig-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ff85c2;
+    }
+
+    .cert-seal {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,105,180,0.2), transparent);
+      border: 2px dashed rgba(255,105,180,0.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 20px;
+    }
+
+    /* ==================== STAT CARDS ==================== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .stat-card {
+      background: rgba(255,105,180,0.12);
+      border: 1px solid rgba(255,105,180,0.3);
+      border-radius: 18px;
+      padding: 24px 18px;
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,105,180,0.08), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .stat-card:hover::before { opacity: 1; }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(255,105,180,0.25); border-color: rgba(255,105,180,0.55); }
+
+    .stat-icon { font-size: 2rem; margin-bottom: 10px; }
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ff85c2;
+      line-height: 1;
+    }
+    .stat-label { font-size: 0.75rem; color: #ffd6ea; margin-top: 6px; font-weight: 500; letter-spacing: 0.05em; }
+
+    /* ==================== INFO BOXES ==================== */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 24px 0;
+    }
+
+    .info-box {
+      background: rgba(255,105,180,0.1);
+      border: 1px solid rgba(255,105,180,0.25);
+      border-radius: 18px;
+      padding: 24px 22px;
+      transition: all 0.3s;
+    }
+
+    .info-box:hover {
+      background: rgba(255,105,180,0.18);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255,105,180,0.2);
+    }
+
+    .info-box-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .info-box-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #ffb3d0;
+      margin-bottom: 8px;
+    }
+
+    .info-box-text {
+      font-size: 0.85rem;
+      color: #ffd6ea;
+      line-height: 1.75;
+    }
+
+    /* ==================== TABLE ==================== */
+    .glass-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .glass-table th {
+      background: rgba(255,105,180,0.25);
+      color: #fff0f6;
+      padding: 14px 18px;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-bottom: 2px solid rgba(255,105,180,0.4);
+      text-align: left;
+    }
+
+    .glass-table td {
+      padding: 12px 18px;
+      font-size: 0.88rem;
+      color: #ffd6ea;
+      border-bottom: 1px solid rgba(255,105,180,0.12);
+      transition: background 0.2s;
+    }
+
+    .glass-table tr:hover td {
+      background: rgba(255,105,180,0.1);
+    }
+
+    .glass-table td:first-child {
+      color: #ff85c2;
+      font-weight: 600;
+    }
+
+    /* ==================== PROGRESS BARS ==================== */
+    .progress-item { margin: 14px 0; }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      font-size: 0.85rem;
+      color: #ffd6ea;
+    }
+    .progress-track {
+      height: 8px;
+      background: rgba(255,105,180,0.12);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,105,180,0.2);
+    }
+    .progress-fill {
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #eb2f96, #ff85c2);
+      position: relative;
+      animation: fill-bar 1.5s ease-out forwards;
+      transform-origin: left;
+    }
+
+    @keyframes fill-bar {
+      from { width: 0 !important; }
+    }
+
+    /* ==================== TIMELINE ==================== */
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, #ff85c2, #f759ab, #eb2f96, transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -26px;
+      top: 4px;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff85c2, #f759ab);
+      border: 2px solid rgba(255,182,217,0.5);
+      box-shadow: 0 0 12px rgba(255,105,180,0.5);
+    }
+
+    .timeline-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: #ffb3d0;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .timeline-text {
+      font-size: 0.85rem;
+      color: #ffd6ea;
+      line-height: 1.7;
+    }
+
+    /* ==================== CHALLENGE CARDS ==================== */
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .challenge-card {
+      background: linear-gradient(135deg, rgba(255,105,180,0.12), rgba(247,89,171,0.06));
+      border: 1px solid rgba(255,105,180,0.22);
+      border-radius: 16px;
+      padding: 20px 18px;
+      transition: all 0.3s;
+    }
+
+    .challenge-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 32px rgba(255,105,180,0.22);
+    }
+
+    .challenge-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .challenge-title { font-size: 0.9rem; font-weight: 600; color: #ffb3d0; margin-bottom: 6px; }
+    .challenge-text { font-size: 0.8rem; color: #ffd6ea; line-height: 1.6; }
+
+    /* ==================== BIBLIOGRAPHY ==================== */
+    .bib-item {
+      background: rgba(255,105,180,0.08);
+      border-left: 3px solid #f759ab;
+      border-radius: 0 12px 12px 0;
+      padding: 14px 20px;
+      margin-bottom: 14px;
+      font-size: 0.88rem;
+      color: #ffd6ea;
+      line-height: 1.6;
+    }
+
+    .bib-item span { color: #ff85c2; font-style: italic; }
+
+    /* ==================== FOOTER ==================== */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-inner {
+      background: rgba(60,0,40,0.45);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,105,180,0.2);
+      border-radius: 20px;
+      padding: 30px 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #ff85c2;
+      margin-bottom: 10px;
+    }
+
+    .footer-text { font-size: 0.8rem; color: #ffa8d0; }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (max-width: 768px) {
+      .cover-main-title { font-size: 2rem; }
+      .glass-card { padding: 28px 22px; }
+      .section-title { font-size: 1.8rem; }
+      .cover-meta-grid { grid-template-columns: 1fr; }
+      .certificate-inner { padding: 30px 20px; }
+      .nav-links { display: none; }
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: fixed;
+      top: 64px; left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #ff85c2, #f759ab);
+      z-index: 999;
+      transition: width 0.1s;
+    }
+
+    /* Ribbon */
+    .ribbon {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(255,105,180,0.3), rgba(247,89,171,0.2));
+      border: 1px solid rgba(255,105,180,0.4);
+      border-radius: 30px;
+      padding: 5px 16px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #ffb3d0;
+      margin: 4px;
+    }
+
+    /* Glow text */
+    .glow-text {
+      text-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+    }
+
+    /* Two column layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* Quote block */
+    .quote-block {
+      border-left: 4px solid #f759ab;
+      background: rgba(255,105,180,0.08);
+      border-radius: 0 16px 16px 0;
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: #ffd6ea;
+    }
+
+    /* Badge */
+    .badge {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .badge-green { background: rgba(100,255,150,0.15); color: #80ffaa; border: 1px solid rgba(100,255,150,0.3); }
+    .badge-red { background: rgba(255,100,120,0.15); color: #ff9aaa; border: 1px solid rgba(255,100,120,0.3); }
+    .badge-blue { background: rgba(100,180,255,0.15); color: #aad4ff; border: 1px solid rgba(100,180,255,0.3); }
+
+    /* Animated number counter */
+    .counter { display: inline-block; }
+
+    /* Image placeholder */
+    .img-placeholder {
+      background: linear-gradient(135deg, rgba(255,105,180,0.15), rgba(247,89,171,0.08));
+      border: 1px solid rgba(255,105,180,0.25);
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+      font-size: 3rem;
+      margin: 16px 0;
+    }
+
+    /* Map section style */
+    .map-box {
+      background: rgba(50,0,35,0.5);
+      border: 1px solid rgba(255,105,180,0.3);
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-box::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 40% 50%, rgba(255,105,180,0.1), transparent 60%);
+    }
+
+    /* Recommendation box */
+    .rec-box {
+      background: linear-gradient(135deg, rgba(255,105,180,0.15), rgba(196,29,127,0.08));
+      border: 1px solid rgba(255,105,180,0.3);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin: 12px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .rec-num {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, #f759ab, #eb2f96);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .rec-content { flex: 1; }
+    .rec-title { font-size: 0.9rem; font-weight: 600; color: #ffb3d0; margin-bottom: 4px; }
+    .rec-text { font-size: 0.82rem; color: #ffd6ea; line-height: 1.65; }
+
+    /* Pie chart via conic-gradient */
+    .pie-chart {
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow: 0 0 40px rgba(255,105,180,0.3);
+    }
+
+    .pie-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .pie-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: #ffd6ea;
+    }
+
+    .pie-dot {
+      width: 12px; height: 12px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    /* Lux decoration */
+    .lux-ornament {
+      text-align: center;
+      font-size: 1.5rem;
+      color: rgba(255,105,180,0.4);
+      margin: 20px 0;
+      letter-spacing: 0.5em;
+    }
+
+    /* Floating label */
+    .float-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,105,180,0.15);
+      border: 1px solid rgba(255,105,180,0.3);
+      border-radius: 24px;
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      color: #ffb3d0;
+      margin: 4px;
+    }
+
+    /* Section spacing */
+    .section-body { margin-top: 12px; }
+
+  </style>
+</head>
+<body>
+
+  <!-- ====== GLOBAL PERMANENT WATERMARK ====== -->
+  <div class="watermark-tiled" aria-hidden="true">
+    <div class="watermark-tile-inner" id="watermarkGrid"></div>
+  </div>
+
+  <!-- Particles Background -->
+  <div id="particles"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-indicator" id="scrollBar"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand">🌸 Dalimbari Gaon · B.A. 4th Sem · R. Sangma</div>
+      <ul class="nav-links">
+        <li><a href="#cover">Home</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#economy">Economy</a></li>
+        <li><a href="#agriculture">Agriculture</a></li>
+        <li><a href="#infrastructure">Infrastructure</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#bibliography">Bibliography</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-wrapper">
+
+    <!-- ========== PAGE 1: COVER ========== -->
+    <section id="cover" class="page-section" style="min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, rgba(255,105,180,0.15) 0%, transparent 60%);">
+      <div class="cover-card">
+        <div class="cover-emblem">🌸</div>
+        <div class="cover-institution">Department of Geography · B.A. 4th Semester · Academic Year 2024–25</div>
+        <div class="cover-line"></div>
+
+        <div class="section-tag">B.A. 4th Semester · Field Study Project</div>
+
+        <h1 class="cover-main-title glow-text">
+          Socio-Economic<br/>Development of<br/>Dalimbari Gaon
+        </h1>
+
+        <div class="cover-subtitle">
+          A Comprehensive Study of Rural Development in West Karbi Anglong, Assam
+        </div>
+
+        <div class="cover-line"></div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px 0;">
+          <span class="ribbon">🏡 Rural Settlement</span>
+          <span class="ribbon">🌿 Agriculture</span>
+          <span class="ribbon">🍵 Tea Cultivation</span>
+          <span class="ribbon">🏫 Education</span>
+          <span class="ribbon">🏛️ Government Schemes</span>
+          <span class="ribbon">🙏 Culture & Religion</span>
+        </div>
+
+        <div class="cover-meta-grid">
+          <div class="cover-meta-item">
+            <div class="cover-meta-label">📍 Location</div>
+            <div class="cover-meta-value">Dalimbari Gaon, West Karbi Anglong District, Assam, India</div>
+          </div>
+          <div class="cover-meta-item">
+            <div class="cover-meta-label">📅 Year of Study</div>
+            <div class="cover-meta-value">B.A. 4th Semester — Academic Year 2024–2025</div>
+          </div>
+          <div class="cover-meta-item">
+            <div class="cover-meta-label">🔬 Study Type</div>
+            <div class="cover-meta-value">Primary Field Study with Direct Observation & Interviews</div>
+          </div>
+          <div class="cover-meta-item">
+            <div class="cover-meta-label">👥 Communities</div>
+            <div class="cover-meta-value">Karbi, Bengali, Garo — Mixed Rural Settlement</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; text-align: center;">
+          <div style="font-size: 0.75rem; color: #ff85c2; letter-spacing: 0.12em; text-transform: uppercase;">Submitted To</div>
+          <div style="font-size: 1rem; color: #ffd6ea; font-weight: 500; margin-top: 4px;">Department of Geography · Course Supervisor</div>
+          <div style="font-size: 0.75rem; color: #ff85c2; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 14px;">Submitted By</div>
+          <div style="font-size: 1.1rem; color: #ffb3d0; font-weight: 700; margin-top: 4px; font-family: 'Playfair Display', serif;">R. Sangma</div>
+          <div style="font-size: 0.82rem; color: #ffd6ea; font-weight: 400; margin-top: 3px;">B.A. 4th Semester · Department of Geography</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; text-align: center; color: rgba(255,182,217,0.6); font-size: 0.8rem; letter-spacing: 0.1em;">
+        ✦ SCROLL DOWN TO EXPLORE ✦
+      </div>
+    </section>
+
+    <!-- ========== PAGE 2: CERTIFICATE ========== -->
+    <section id="certificate" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">02</div>
+        <div class="section-tag">Page 2 of 10</div>
+        <h2 class="section-title">Certificate of Authenticity</h2>
+        <div class="divider"></div>
+
+        <div class="certificate-border">
+          <div class="certificate-inner">
+            <div class="cert-watermark">✦</div>
+            <div class="cert-seal">🌸</div>
+
+            <div class="cert-title">Certificate of Completion</div>
+            <div style="font-size: 0.75rem; letter-spacing: 0.18em; color: #ff85c2; text-transform: uppercase; margin-bottom: 20px;">Field Study Project · B.A. 4th Semester · Geography</div>
+
+            <div class="lux-ornament">— ✦ —</div>
+
+            <div class="cert-body">
+              This is to certify that the project entitled<br/>
+              <span>"Socio-Economic Development of Dalimbari Gaon"</span><br/>
+              has been carried out and submitted by<br/>
+              <span>R. Sangma</span><br/>
+              student of <span>B.A. 4th Semester</span>, under the Department of<br/>
+              <span>Geography</span>, for the academic year <span>2024 – 2025</span>.<br/><br/>
+
+              The project is the result of genuine <span>field work, primary data collection,</span><br/>
+              direct observation, and original research conducted at<br/>
+              <span>Dalimbari Village, West Karbi Anglong District, Assam</span>.<br/><br/>
+
+              The content of this project is original and has not been<br/>
+              submitted elsewhere for any other examination or purpose.
+            </div>
+
+            <div class="lux-ornament">✦ ✦ ✦</div>
+
+            <div class="cert-signature-row">
+              <div class="cert-signature">
+                <div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 1rem; color: rgba(255,182,217,0.55); margin-bottom: 4px; letter-spacing: 0.04em;">R. Sangma</div>
+                <div class="sig-line"></div>
+                <div class="sig-label">Student's Signature</div>
+              </div>
+              <div class="cert-signature">
+                <div style="font-size: 1.5rem; margin-bottom: 8px; color: rgba(255,182,217,0.3);">✦</div>
+                <div class="sig-label" style="font-size: 0.8rem; color: #ff85c2;">Seal</div>
+              </div>
+              <div class="cert-signature">
+                <div class="sig-line"></div>
+                <div class="sig-label">Teacher's Signature</div>
+              </div>
+              <div class="cert-signature">
+                <div class="sig-line"></div>
+                <div class="sig-label">Principal's Signature</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; font-size: 0.78rem; color: rgba(255,182,217,0.5); letter-spacing: 0.1em;">
+              Date: _____________________ &nbsp;|&nbsp; School Stamp: _____________________
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 3: INTRODUCTION ========== -->
+    <section id="introduction" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">03</div>
+        <div class="section-tag">Page 3 of 10</div>
+        <h2 class="section-title">Introduction</h2>
+        <div class="section-subtitle">Overview of Dalimbari Gaon — People, Place & Purpose</div>
+        <div class="divider"></div>
+
+        <div class="quote-block">
+          "Dalimbari Gaon — a gem of rural Assam — where the hills whisper stories of tradition, the rivers sing songs of livelihood, and the people strive daily toward a brighter tomorrow."
+        </div>
+
+        <div class="body-text section-body">
+          <strong>Dalimbari Gaon</strong> is a developing rural village nestled in the <strong>West Karbi Anglong District</strong> of Assam, India. The village represents a classic example of a multi-ethnic rural settlement in Northeast India, characterized by its diverse communities, mixed terrain of hills and plains, and rich natural resources. The village is home to the <strong>Karbi, Bengali, and Garo</strong> communities who coexist harmoniously, each contributing uniquely to the socio-economic fabric of the village.
+        </div>
+
+        <div class="stats-grid" style="margin-top: 24px;">
+          <div class="stat-card">
+            <div class="stat-icon">🏘️</div>
+            <div class="stat-number">1</div>
+            <div class="stat-label">Village / Gaon</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏫</div>
+            <div class="stat-number">8</div>
+            <div class="stat-label">Schools</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🌿</div>
+            <div class="stat-number">2</div>
+            <div class="stat-label">Tea Gardens</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⛪</div>
+            <div class="stat-number">5</div>
+            <div class="stat-label">Places of Worship</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💧</div>
+            <div class="stat-number">2</div>
+            <div class="stat-label">Rivers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🛒</div>
+            <div class="stat-number">1</div>
+            <div class="stat-label">Daily Market</div>
+          </div>
+        </div>
+
+        <div class="body-text" style="margin-top: 20px;">
+          The village economy is primarily <strong>agriculture-based</strong> with tea cultivation and areca nut (betelnut) farming playing a significant economic role. The Chinanadi and Naudubi rivers serve as natural lifelines. The development level of the village is <strong>low to moderate</strong>, with basic infrastructure such as schools, a health sub-centre, and market facilities present, but persistent challenges remain — particularly in road quality, healthcare access, water supply, and employment diversification.
+        </div>
+
+        <div class="two-col" style="margin-top: 24px;">
+          <div class="info-box">
+            <span class="info-box-icon">🗺️</span>
+            <div class="info-box-title">Geographic Setting</div>
+            <div class="info-box-text">Located in West Karbi Anglong district, Assam. Features mixed terrain — hills and plains — typical of Karbi Anglong's diverse landscape. Rich forest cover and river systems.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">👥</span>
+            <div class="info-box-title">Community Profile</div>
+            <div class="info-box-text">Multi-ethnic village with Karbi, Bengali, and Garo communities. Strong Karbi cultural identity forms the core of village traditions and governance.</div>
+          </div>
+        </div>
+
+        <div class="body-text" style="margin-top: 16px;">
+          This project aims to provide a comprehensive study of the <strong>socio-economic development status</strong> of Dalimbari Gaon — examining markets, schools, agricultural practices, government schemes (Jal Jeevan Mission, MGNREGA, Pradhan Mantri Awas Yojana), religious and cultural spaces, natural resources, and areas requiring urgent improvement.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 4: METHODOLOGY ========== -->
+    <section id="methodology" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">04</div>
+        <div class="section-tag">Page 4 of 10</div>
+        <h2 class="section-title">Research Methodology</h2>
+        <div class="section-subtitle">Methods & Approaches Used for Field Data Collection</div>
+        <div class="divider"></div>
+
+        <div class="body-text">
+          This field study employed a combination of <strong>primary and secondary data collection methods</strong> to comprehensively understand the socio-economic development of Dalimbari Gaon. The research was guided by the principles of rural geography and human geography fieldwork.
+        </div>
+
+        <div class="info-grid" style="margin-top: 24px;">
+          <div class="info-box">
+            <span class="info-box-icon">👁️</span>
+            <div class="info-box-title">1. Direct Observation Method</div>
+            <div class="info-box-text">Physical observation of roads, market, schools, water supply points, places of worship, agricultural fields, tea gardens, and river areas. Visual assessment of infrastructure quality and development status.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">🚶</span>
+            <div class="info-box-title">2. Transect Walk Method</div>
+            <div class="info-box-text">A systematic walk through different localities of the village — from the market area to the agricultural fields, tea gardens, riverside areas, and residential zones — recording observations at each point.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">💬</span>
+            <div class="info-box-title">3. Informal Interview Method</div>
+            <div class="info-box-text">Informal conversations and discussions with local residents, farmers, traders, and school teachers to gather qualitative information about livelihoods, challenges, and aspirations of the community.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">📋</span>
+            <div class="info-box-title">4. Listing Method</div>
+            <div class="info-box-text">Systematic listing and enumeration of schools, worship places, public facilities, government scheme beneficiaries, market stalls, and other infrastructure elements present in the village.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">📚</span>
+            <div class="info-box-title">5. Secondary Data Collection</div>
+            <div class="info-box-text">Referencing published reports, Census of India 2011 data, government scheme records (MGNREGA, Jal Jeevan Mission), district development reports, and online resources for background information.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">📸</span>
+            <div class="info-box-title">6. Photographic Documentation</div>
+            <div class="info-box-text">Visual documentation of key sites including market areas, roads, rivers, schools, places of worship, agricultural fields, and government-constructed housing to support field observations.</div>
+          </div>
+        </div>
+
+        <div class="body-text" style="margin-top: 20px;">
+          <strong>Area of Study:</strong> Dalimbari Gaon, West Karbi Anglong, Assam<br/>
+          <strong>Data Collection Period:</strong> Academic Year 2024–25<br/>
+          <strong>Limitations:</strong> No formal structured questionnaire was used; data is primarily based on observation and informal discussions. Population census data specific to Dalimbari was estimated from district-level records.
+        </div>
+
+        <div class="quote-block" style="margin-top: 20px;">
+          The methodology combined both qualitative and observational approaches to build a holistic understanding of Dalimbari's development landscape.
+        </div>
+
+        <div style="margin-top: 20px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.1rem; margin-bottom: 14px;">Occupational Distribution of Dalimbari (Estimated)</h3>
+
+          <div class="progress-item">
+            <div class="progress-label"><span>🌾 Agriculture</span><span>50%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 50%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>💪 Wage Labour (MGNREGA etc.)</span><span>25%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 25%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🍵 Tea Garden Work</span><span>12%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 12%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🏪 Business / Trade</span><span>8%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 8%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🎓 Others (Service, Misc.)</span><span>5%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 5%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 5: ECONOMY & MARKET ========== -->
+    <section id="economy" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">05</div>
+        <div class="section-tag">Page 5 of 10</div>
+        <h2 class="section-title">Economic Structure & Market</h2>
+        <div class="section-subtitle">Trade, Commerce & Livelihood of Dalimbari Gaon</div>
+        <div class="divider"></div>
+
+        <div class="body-text">
+          The economy of Dalimbari Gaon is characterized by a predominantly <strong>agrarian base</strong> supplemented by small-scale trade and labour. The village has a <strong>daily local market (bazaar)</strong> that serves as the primary centre of economic activity and social interaction for residents and neighbouring areas.
+        </div>
+
+        <div class="info-grid" style="margin-top: 24px;">
+          <div class="info-box">
+            <span class="info-box-icon">🛒</span>
+            <div class="info-box-title">Daily Market (Bazaar)</div>
+            <div class="info-box-text">The village has a functioning daily market where agricultural produce, vegetables, fish, grocery items, and essential goods are traded. The market serves as the economic hub and social gathering point. Local farmers sell surplus produce directly to consumers, reducing dependence on distant markets.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">🌾</span>
+            <div class="info-box-title">Agricultural Trade</div>
+            <div class="info-box-text">Rice, mustard, vegetables, and seasonal fruits are the primary commodities traded. Farmers face challenges of price fluctuation and lack of cold storage, leading to post-harvest losses. Access to larger markets remains limited due to poor road connectivity.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">🌿</span>
+            <div class="info-box-title">Betelnut (Areca Nut) Trade</div>
+            <div class="info-box-text">Betelnut cultivation is a major cash crop for many households. Dalimbari's climate and terrain are suitable for areca nut plantations. Local traders and middlemen purchase betelnut from farmers, though farmers often receive below-market prices due to lack of direct market access.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">🍵</span>
+            <div class="info-box-title">Tea Industry Contribution</div>
+            <div class="info-box-text">Two tea gardens in and around Dalimbari provide employment to approximately 12% of the working population. Tea leaf harvesting, processing, and sale form a significant component of the local economy, particularly for landless labourers.</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.2rem; margin-bottom: 18px;">Economic Development Indicators</h3>
+          <table class="glass-table">
+            <thead>
+              <tr>
+                <th>Economic Indicator</th>
+                <th>Status</th>
+                <th>Development Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Daily Market / Bazaar</td>
+                <td>Functional — Daily Operation</td>
+                <td><span class="badge badge-green">Moderate</span></td>
+              </tr>
+              <tr>
+                <td>Agricultural Output</td>
+                <td>Rice, Mustard, Vegetables, Fruits</td>
+                <td><span class="badge badge-green">Active</span></td>
+              </tr>
+              <tr>
+                <td>Tea Garden Employment</td>
+                <td>2 Gardens — ~12% Workforce</td>
+                <td><span class="badge badge-blue">Developing</span></td>
+              </tr>
+              <tr>
+                <td>Betelnut / Areca Nut Trade</td>
+                <td>Cash Crop — Major Household Income</td>
+                <td><span class="badge badge-green">Active</span></td>
+              </tr>
+              <tr>
+                <td>Market Infrastructure</td>
+                <td>Basic — Needs Upgrading</td>
+                <td><span class="badge badge-red">Low</span></td>
+              </tr>
+              <tr>
+                <td>Banking / Financial Services</td>
+                <td>Limited Access</td>
+                <td><span class="badge badge-red">Poor</span></td>
+              </tr>
+              <tr>
+                <td>Digital Commerce</td>
+                <td>Negligible / Absent</td>
+                <td><span class="badge badge-red">Very Low</span></td>
+              </tr>
+              <tr>
+                <td>MGNREGA Employment</td>
+                <td>Active — Seasonal Wage Labour</td>
+                <td><span class="badge badge-blue">Functional</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="quote-block" style="margin-top: 24px;">
+          The market of Dalimbari is the beating heart of the village economy — a place where farmers, traders, and families converge each day, exchanging not just goods but stories, news, and community bonds.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 6: AGRICULTURE & TEA CULTIVATION ========== -->
+    <section id="agriculture" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">06</div>
+        <div class="section-tag">Page 6 of 10</div>
+        <h2 class="section-title">Agriculture, Tea & Betelnut Cultivation</h2>
+        <div class="section-subtitle">The Green Economy of Dalimbari Gaon</div>
+        <div class="divider"></div>
+
+        <div class="body-text">
+          Agriculture forms the <strong>backbone of Dalimbari's economy</strong>, with over 50% of the population dependent on farming for their primary livelihood. The village's fertile plains, adequate rainfall, and proximity to rivers make it naturally suited for diverse agricultural activities.
+        </div>
+
+        <div class="two-col" style="margin-top: 24px;">
+          <div>
+            <div class="info-box" style="margin-bottom: 16px;">
+              <span class="info-box-icon">🌾</span>
+              <div class="info-box-title">Paddy / Rice Cultivation</div>
+              <div class="info-box-text">The primary food crop of Dalimbari. Farmers follow the traditional transplanting method. Two main seasons — Ahu (summer) and Sali (winter). Irrigation is mostly rain-fed with some river-based irrigation. Yield is moderate; modern techniques are gradually being adopted.</div>
+            </div>
+            <div class="info-box" style="margin-bottom: 16px;">
+              <span class="info-box-icon">🌻</span>
+              <div class="info-box-title">Mustard & Seasonal Crops</div>
+              <div class="info-box-text">Mustard is grown as a winter cash crop. Vegetables including brinjal, gourd, beans, and leafy greens are cultivated in kitchen gardens and small plots. Seasonal fruits supplement household nutrition and income.</div>
+            </div>
+          </div>
+          <div>
+            <div class="info-box" style="margin-bottom: 16px;">
+              <span class="info-box-icon">🍵</span>
+              <div class="info-box-title">Tea Cultivation (Cha Bagaan)</div>
+              <div class="info-box-text">Dalimbari has two tea gardens that are significant employers. Tea cultivation requires specific soil pH and climate — both of which are favourable in West Karbi Anglong. Leaves are plucked seasonally and processed either locally or at nearby factories. Tea garden workers are among the most economically vulnerable sections of the community.</div>
+            </div>
+            <div class="info-box">
+              <span class="info-box-icon">🌴</span>
+              <div class="info-box-title">Betelnut (Tamol) / Areca Nut</div>
+              <div class="info-box-text">Areca nut (locally called Tamol) is a culturally and economically significant crop. Betelnut trees are grown in homestead gardens and dedicated plantations. The nut is sold fresh or dried to local traders and wholesalers. It holds deep cultural significance in Karbi and Assamese traditions.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.15rem; margin-bottom: 18px;">Agricultural Profile at a Glance</h3>
+
+          <table class="glass-table">
+            <thead>
+              <tr>
+                <th>Crop / Activity</th>
+                <th>Season</th>
+                <th>Economic Role</th>
+                <th>Challenges</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>🌾 Paddy (Rice)</td>
+                <td>Kharif (Sali) + Summer (Ahu)</td>
+                <td>Food Security + Primary Income</td>
+                <td>Low yield, no cold storage</td>
+              </tr>
+              <tr>
+                <td>🌻 Mustard</td>
+                <td>Rabi (Winter)</td>
+                <td>Cash Crop + Cooking Oil</td>
+                <td>Price instability</td>
+              </tr>
+              <tr>
+                <td>🥬 Vegetables</td>
+                <td>Year-round (Kitchen Garden)</td>
+                <td>Household Nutrition + Market Sale</td>
+                <td>Limited irrigation</td>
+              </tr>
+              <tr>
+                <td>🍵 Tea Leaves</td>
+                <td>March – November</td>
+                <td>Employment + Export Revenue</td>
+                <td>Low wages, seasonal insecurity</td>
+              </tr>
+              <tr>
+                <td>🌴 Areca Nut (Betelnut)</td>
+                <td>Year-round (Perennial)</td>
+                <td>Major Cash Crop</td>
+                <td>Middlemen exploitation</td>
+              </tr>
+              <tr>
+                <td>🐟 Fishery</td>
+                <td>Year-round</td>
+                <td>Dietary Supplement + Market</td>
+                <td>Small scale, traditional methods</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="body-text" style="margin-top: 20px;">
+          <strong>Key Agricultural Challenges:</strong> Lack of modern farming equipment, limited access to quality seeds and fertilisers, absence of agricultural extension services, poor road connectivity reducing market access, dependence on monsoon rainfall, and minimal government-supported irrigation infrastructure remain the primary challenges for Dalimbari's farming community.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 7: INFRASTRUCTURE & GOVERNMENT SCHEMES ========== -->
+    <section id="infrastructure" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">07</div>
+        <div class="section-tag">Page 7 of 10</div>
+        <h2 class="section-title">Infrastructure, Education & Government Schemes</h2>
+        <div class="section-subtitle">Schools, Roads, Jal Jeevan Mission, MGNREGA & Housing</div>
+        <div class="divider"></div>
+
+        <!-- Schools -->
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.2rem; margin-bottom: 14px;">🏫 Educational Infrastructure</h3>
+          <div class="body-text">
+            Dalimbari Gaon has a notable presence of educational institutions — with <strong>8 schools</strong> serving the community at various levels. These include primary schools, upper primary schools, and high/higher secondary institutions. Education is accessible to children within the village and nearby hamlets.
+          </div>
+          <div class="info-grid" style="margin-top: 16px;">
+            <div class="info-box">
+              <span class="info-box-icon">📖</span>
+              <div class="info-box-title">Primary Schools (LP)</div>
+              <div class="info-box-text">Multiple Lower Primary schools serve children from Classes 1–5. Teaching is primarily in Assamese and Karbi languages. Infrastructure is basic but functional.</div>
+            </div>
+            <div class="info-box">
+              <span class="info-box-icon">📗</span>
+              <div class="info-box-title">Middle & Upper Primary (ME/UP)</div>
+              <div class="info-box-text">Upper Primary schools offer Classes 6–8. Mid-Day Meal scheme is active. Teacher shortage is a persistent issue, affecting quality of education.</div>
+            </div>
+            <div class="info-box">
+              <span class="info-box-icon">🎓</span>
+              <div class="info-box-title">High & Higher Secondary</div>
+              <div class="info-box-text">Access to high school education is available within or near the village. Higher secondary students may travel to nearby towns. Dropout rates, especially among girls, remain a concern.</div>
+            </div>
+          </div>
+          <div class="body-text" style="margin-top: 12px;">
+            Estimated literacy rate for Dalimbari area: <strong>~60–68%</strong>, below the Assam state average of 72.19% (Census 2011). Girls' education, digital literacy, and vocational training need targeted attention.
+          </div>
+        </div>
+
+        <!-- Roads -->
+        <div style="margin-bottom: 30px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.2rem; margin-bottom: 14px;">🛣️ Road Infrastructure — A Critical Challenge</h3>
+          <div class="body-text">
+            One of the most significant development challenges of Dalimbari Gaon is <strong>poor road quality</strong>. The internal village roads are largely unpaved or poorly maintained, making connectivity difficult — especially during the monsoon season. This severely impacts agricultural trade, access to healthcare, and daily commute.
+          </div>
+          <div class="challenge-grid" style="margin-top: 16px;">
+            <div class="challenge-card">
+              <div class="challenge-icon">🚧</div>
+              <div class="challenge-title">Kutcha / Unpaved Roads</div>
+              <div class="challenge-text">Most internal roads within Dalimbari are either earthen (kutcha) or poorly asphalted, becoming waterlogged and impassable during rain.</div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-icon">🌧️</div>
+              <div class="challenge-title">Monsoon Damage</div>
+              <div class="challenge-text">Annual monsoon floods cause severe damage to already fragile road surfaces, isolating parts of the village for weeks.</div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-icon">🚑</div>
+              <div class="challenge-title">Healthcare Access Barrier</div>
+              <div class="challenge-text">Poor roads make emergency medical transport extremely difficult. Pregnant women and elderly face serious risks due to road conditions.</div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-icon">🚛</div>
+              <div class="challenge-title">Market Connectivity</div>
+              <div class="challenge-text">Farmers struggle to transport produce to larger markets. High transportation costs reduce profit margins for agricultural families.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Government Schemes -->
+        <div>
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.2rem; margin-bottom: 14px;">🏛️ Government Schemes in Dalimbari</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-title">💧 Jal Jeevan Mission (JJM)</div>
+              <div class="timeline-text">The Government of India's flagship Jal Jeevan Mission aims to provide functional household tap connections (FHTC) to every rural household. In Dalimbari, partial implementation is underway with piped water supply infrastructure being developed. Access to clean drinking water remains a challenge in some parts of the village, with residents still relying on traditional wells and natural water bodies.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-title">🏠 PMAY / Government Housing Scheme</div>
+              <div class="timeline-text">The Pradhan Mantri Awas Yojana (Gramin) has provided pucca (permanent) houses to Below Poverty Line (BPL) families in Dalimbari. These government-built concrete houses have replaced many traditional bamboo/thatch kutcha structures, significantly improving living conditions and safety for beneficiary families.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-title">💪 MGNREGA (Mahatma Gandhi NREGA)</div>
+              <div class="timeline-text">The Mahatma Gandhi National Rural Employment Guarantee Act provides guaranteed wage employment to rural households. In Dalimbari, MGNREGA has been used for road repair works, construction of small ponds, land levelling, and farm bunding. It serves as a crucial income source for approximately 25% of the village's working population, particularly during non-agricultural seasons.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-title">⚡ Saubhagya / Electrification Scheme</div>
+              <div class="timeline-text">Rural electrification under the Saubhagya scheme has brought electricity to most households in Dalimbari. However, power supply remains irregular, with frequent outages affecting daily life, education (evening study), and small-scale businesses.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 8: CULTURE, RELIGION & RECREATION ========== -->
+    <section id="culture" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">08</div>
+        <div class="section-tag">Page 8 of 10</div>
+        <h2 class="section-title">Culture, Religion, Rivers & Recreation</h2>
+        <div class="section-subtitle">Spiritual Life, Natural Heritage & Recreational Spaces of Dalimbari</div>
+        <div class="divider"></div>
+
+        <div class="body-text">
+          Dalimbari Gaon is rich in <strong>cultural heritage and natural beauty</strong>. The village's socio-cultural life revolves around its religious institutions, vibrant festivals, and the breathtaking natural landscapes defined by its rivers, hills, and forests.
+        </div>
+
+        <div class="info-grid" style="margin-top: 24px;">
+          <!-- Religion -->
+          <div class="info-box">
+            <span class="info-box-icon">🛕</span>
+            <div class="info-box-title">Kali Mandir (Hindu Temple)</div>
+            <div class="info-box-text">The Kali Mandir is a revered Hindu temple in Dalimbari, serving the Bengali and Hindu Karbi communities. It is the centre of religious activity during Kali Puja, Durga Puja, and other festivals. The temple also serves as a community gathering space for social events and village meetings.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">⛪</span>
+            <div class="info-box-title">Church (Christian)</div>
+            <div class="info-box-text">Christianity is practiced by a significant portion of the Karbi community. The village church is an active centre of worship, education, and social welfare. Churches in Karbi areas often run informal schools and community programmes, contributing to social development alongside religious practice.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">🙏</span>
+            <div class="info-box-title">Other Places of Worship</div>
+            <div class="info-box-text">The village has 5 places of worship in total, reflecting its multi-religious character. Mosques serve the Muslim Bengali community, while traditional Karbi animist sacred sites (Ke-Ke spots) also hold spiritual significance. Religious harmony is a notable feature of Dalimbari's social fabric.</div>
+          </div>
+
+          <!-- Rivers -->
+          <div class="info-box">
+            <span class="info-box-icon">🌊</span>
+            <div class="info-box-title">Chinanadi River</div>
+            <div class="info-box-text">The Chinanadi (China River) is one of the lifeline rivers of Dalimbari. It is used for irrigation, fishing, bathing, and washing. The river banks are scenic and serve as informal picnic spots, especially during festivals. Fish from the river supplements the dietary needs of many families. Seasonal flooding, however, poses a recurring risk.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">💧</span>
+            <div class="info-box-title">Naudubi River</div>
+            <div class="info-box-text">The Naudubi River is another important water body near Dalimbari. It contributes to the local ecological balance and agricultural water supply. The river and its surroundings have potential for eco-tourism development. Local legends and folk stories are associated with this river, making it culturally significant too.</div>
+          </div>
+          <div class="info-box">
+            <span class="info-box-icon">🌸</span>
+            <div class="info-box-title">Picnic Spots & Natural Beauty</div>
+            <div class="info-box-text">The convergence of the rivers, surrounding hills, and lush greenery makes Dalimbari an attractive picnic destination. During winter and festive seasons, families and groups from neighbouring areas visit the riverbanks for picnics and recreation. Developing these spots could boost local eco-tourism and generate additional income.</div>
+          </div>
+        </div>
+
+        <!-- Playground -->
+        <div style="margin-top: 28px; background: rgba(255,105,180,0.1); border: 1px solid rgba(255,105,180,0.25); border-radius: 18px; padding: 24px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.1rem; margin-bottom: 14px;">⚽ Playground & Sports Culture</h3>
+          <div class="body-text">
+            Dalimbari has a village playground that serves as the hub of youth recreational activity. <strong>Football</strong> is the most popular sport among the youth, followed by traditional games. The playground hosts local football tournaments during festivals, bringing communities together. However, the playground lacks proper facilities — no goalposts in good condition, no seating area, and maintenance is minimal. Investing in sports infrastructure could significantly improve youth engagement, reduce social problems, and nurture athletic talent from the village.
+          </div>
+        </div>
+
+        <div style="margin-top: 24px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.1rem; margin-bottom: 14px;">🎭 Cultural Festivals & Traditions</h3>
+          <div class="two-col">
+            <div>
+              <div class="float-chip">🌺 Rongker Festival (Karbi)</div>
+              <div class="float-chip">🌸 Chomangkan (Death Ritual Ceremony)</div>
+              <div class="float-chip">🎉 Durga Puja</div>
+              <div class="float-chip">🕯️ Kali Puja</div>
+            </div>
+            <div>
+              <div class="float-chip">🙏 Christmas (Christian Karbi)</div>
+              <div class="float-chip">⚽ Village Football Tournament</div>
+              <div class="float-chip">🌊 River Festival / Picnic Days</div>
+              <div class="float-chip">🎶 Bihu Celebrations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 9: ANALYSIS & FINDINGS ========== -->
+    <section id="analysis" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">09</div>
+        <div class="section-tag">Page 9 of 10</div>
+        <h2 class="section-title">Analysis, Findings & Recommendations</h2>
+        <div class="section-subtitle">Socio-Economic Development Assessment of Dalimbari Gaon</div>
+        <div class="divider"></div>
+
+        <!-- Overall assessment -->
+        <div class="body-text">
+          Based on field observations, informal interviews, and secondary data analysis, the <strong>overall socio-economic development level of Dalimbari Gaon is LOW to MODERATE</strong>. The village has significant natural resources and a strong community, but is constrained by infrastructure deficits and limited economic diversification.
+        </div>
+
+        <!-- Development Index -->
+        <div style="margin: 28px 0;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.1rem; margin-bottom: 18px;">📊 Sector-wise Development Index</h3>
+          <div class="progress-item">
+            <div class="progress-label"><span>🏫 Education Infrastructure</span><span>65%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 65%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🌾 Agricultural Development</span><span>55%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 55%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🛣️ Road & Transport Infrastructure</span><span>25%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 25%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>💧 Water Supply (Jal Jeevan Mission)</span><span>45%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 45%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🏠 Housing (PMAY)</span><span>60%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 60%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🏥 Healthcare Access</span><span>35%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 35%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🛒 Market & Trade</span><span>50%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 50%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>🌐 Digital Connectivity</span><span>20%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 20%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Key Findings -->
+        <div style="margin-bottom: 28px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.1rem; margin-bottom: 16px;">🔍 Key Findings</h3>
+          <div class="challenge-grid">
+            <div class="challenge-card">
+              <div class="challenge-icon">✅</div>
+              <div class="challenge-title">Strengths</div>
+              <div class="challenge-text">Rich natural resources, functional daily market, 8 schools, cultural unity, active MGNREGA, 2 tea gardens, betelnut cultivation, scenic rivers.</div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-icon">⚠️</div>
+              <div class="challenge-title">Weaknesses</div>
+              <div class="challenge-text">Poor road conditions, weak healthcare, water supply gaps, limited digital access, low income diversification, teacher shortage, post-harvest loss.</div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-icon">🌟</div>
+              <div class="challenge-title">Opportunities</div>
+              <div class="challenge-text">Eco-tourism potential (Chinanadi/Naudubi rivers), skill development, organic farming, better market linkage, digital literacy, sports development.</div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-icon">⚡</div>
+              <div class="challenge-title">Threats</div>
+              <div class="challenge-text">Seasonal flooding, youth outmigration to cities, environmental degradation, climate change impact on agriculture, land erosion by rivers.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div>
+          <h3 style="font-family: 'Playfair Display', serif; color: #ffb3d0; font-size: 1.1rem; margin-bottom: 16px;">💡 Recommendations for Development</h3>
+
+          <div class="rec-box">
+            <div class="rec-num">1</div>
+            <div class="rec-content">
+              <div class="rec-title">Road Construction & Maintenance</div>
+              <div class="rec-text">Immediate priority should be given to constructing all-weather paved roads within and connecting Dalimbari Gaon. PMGSY (Pradhan Mantri Gram Sadak Yojana) funds should be mobilised to ensure year-round connectivity.</div>
+            </div>
+          </div>
+
+          <div class="rec-box">
+            <div class="rec-num">2</div>
+            <div class="rec-content">
+              <div class="rec-title">Complete Jal Jeevan Mission Implementation</div>
+              <div class="rec-text">Full implementation of piped drinking water supply to every household under JJM should be accelerated. Community-based water management committees should be formed for long-term sustainability.</div>
+            </div>
+          </div>
+
+          <div class="rec-box">
+            <div class="rec-num">3</div>
+            <div class="rec-content">
+              <div class="rec-title">Agricultural Support & Market Linkage</div>
+              <div class="rec-text">Establishing a Farmer Producer Organisation (FPO) to help farmers directly connect with wholesale markets, eliminating middlemen. Providing cold storage, quality seeds, and agricultural training would significantly boost income.</div>
+            </div>
+          </div>
+
+          <div class="rec-box">
+            <div class="rec-num">4</div>
+            <div class="rec-content">
+              <div class="rec-title">Eco-Tourism Development</div>
+              <div class="rec-text">The Chinanadi and Naudubi rivers, combined with the natural hill scenery, offer excellent eco-tourism potential. Developing basic facilities — boat rides, nature walks, safe picnic areas, local food stalls — could generate supplementary income for the community.</div>
+            </div>
+          </div>
+
+          <div class="rec-box">
+            <div class="rec-num">5</div>
+            <div class="rec-content">
+              <div class="rec-title">Healthcare Strengthening & Digital Connectivity</div>
+              <div class="rec-text">A functional Primary Health Centre (PHC) with resident medical staff should be established. Simultaneously, internet connectivity through BharatNet or similar programmes would enable digital education, telemedicine, and e-commerce for local farmers and traders.</div>
+            </div>
+          </div>
+
+          <div class="rec-box">
+            <div class="rec-num">6</div>
+            <div class="rec-content">
+              <div class="rec-title">Playground & Youth Development</div>
+              <div class="rec-text">Proper development of the village playground with standard football posts, seating arrangements, and lighting would encourage youth participation in sports, reduce social issues, and potentially identify talent for district/state level competitions.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div style="margin-top: 28px; padding: 24px; background: rgba(60,0,40,0.4); border: 1px solid rgba(255,105,180,0.3); border-radius: 18px;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ff85c2; font-size: 1.15rem; margin-bottom: 12px;">📝 Conclusion</h3>
+          <div class="body-text">
+            Dalimbari Gaon is a <strong>resilient and culturally rich village</strong> with tremendous potential for socio-economic growth. With its natural assets — fertile land, two rivers, tea gardens, betelnut plantations, and scenic landscapes — and its diverse yet harmonious community, Dalimbari has all the ingredients for balanced development. What is urgently needed is <strong>targeted government investment in roads, water, healthcare, digital connectivity, and agricultural support</strong>, combined with community-led initiatives in eco-tourism and skill development. With the right policies and people-centric planning, <strong>Dalimbari Gaon can transform into a model of rural development in Assam</strong>, preserving its rich Karbi traditions while embracing the opportunities of the modern world.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PAGE 10: BIBLIOGRAPHY ========== -->
+    <section id="bibliography" class="page-section">
+      <div class="glass-card glass-card-wide">
+        <div class="section-number">10</div>
+        <div class="section-tag">Page 10 of 10</div>
+        <h2 class="section-title">Bibliography & References</h2>
+        <div class="section-subtitle">Sources, References & Acknowledgements</div>
+        <div class="divider"></div>
+
+        <div class="body-text" style="margin-bottom: 24px;">
+          The following sources were consulted for the preparation of this project on Socio-Economic Development of Dalimbari Gaon:
+        </div>
+
+        <!-- Bibliography Items -->
+        <div class="bib-item">
+          <strong>[1]</strong> Office of the Registrar General & Census Commissioner, India. <span>"Census of India 2011 — District Census Handbook: Karbi Anglong."</span> Ministry of Home Affairs, Government of India, New Delhi, 2013.
+        </div>
+
+        <div class="bib-item">
+          <strong>[2]</strong> Ministry of Jal Shakti, Government of India. <span>"Jal Jeevan Mission — Implementation Guidelines."</span> Department of Drinking Water & Sanitation, New Delhi, 2019. Available at: jaljeevanmission.gov.in
+        </div>
+
+        <div class="bib-item">
+          <strong>[3]</strong> Ministry of Rural Development, Government of India. <span>"MGNREGS Implementation Report — Assam."</span> Department of Rural Development, 2023–24. Available at: nrega.nic.in
+        </div>
+
+        <div class="bib-item">
+          <strong>[4]</strong> District Rural Development Agency (DRDA), West Karbi Anglong. <span>"Annual Development Report — Rural Development Schemes."</span> Government of Assam, 2023.
+        </div>
+
+        <div class="bib-item">
+          <strong>[5]</strong> Backless Hub Max. <span>"Dalimbari Gaon — Field Report & Study Guide."</span> Online Educational Resource, 2024. Available at: https://backlesshub-max.github.io/field/
+        </div>
+
+        <div class="bib-item">
+          <strong>[6]</strong> Tea Board of India. <span>"Status of Tea Industry in Northeast India."</span> Government of India, Kolkata, 2022. Available at: teaboard.gov.in
+        </div>
+
+        <div class="bib-item">
+          <strong>[7]</strong> Assam State Disaster Management Authority (ASDMA). <span>"Flood Risk Assessment Report — West Karbi Anglong District."</span> Government of Assam, Guwahati, 2022.
+        </div>
+
+        <div class="bib-item">
+          <strong>[8]</strong> National Geographic Foundation. <span>"Rural Development and Agricultural Economy in Northeast India."</span> Research Series, 2021.
+        </div>
+
+        <div class="bib-item">
+          <strong>[9]</strong> Government of Assam. <span>"Karbi Anglong Autonomous Council — Annual Development Report."</span> Directorate of Statistical & Economics, Assam, 2022.
+        </div>
+
+        <div class="bib-item">
+          <strong>[10]</strong> Ministry of Rural Development. <span>"Pradhan Mantri Awas Yojana Gramin (PMAY-G) — Beneficiary Report, Assam."</span> Government of India, 2023. Available at: pmayg.nic.in
+        </div>
+
+        <div class="bib-item">
+          <strong>[11]</strong> NCERT. <span>"Practical Work in Geography — Part II (Class XII)."</span> National Council of Educational Research and Training, New Delhi, 2023 Edition.
+        </div>
+
+        <div class="bib-item">
+          <strong>[12]</strong> Direct Field Observations and Informal Interviews. <span>Primary Data Collected During Field Visit to Dalimbari Gaon,</span> West Karbi Anglong, Assam. Academic Year 2024–25.
+        </div>
+
+        <!-- Acknowledgement -->
+        <div style="margin-top: 36px; padding: 28px; background: rgba(255,105,180,0.08); border: 1px solid rgba(255,105,180,0.2); border-radius: 18px; text-align: center;">
+          <h3 style="font-family: 'Playfair Display', serif; color: #ff85c2; font-size: 1.3rem; margin-bottom: 16px;">🙏 Acknowledgement</h3>
+          <div class="body-text" style="text-align: center; max-width: 700px; margin: 0 auto;">
+            I, <strong>R. Sangma</strong>, express my sincere gratitude to my <strong>Geography Professor / Supervisor</strong> for their constant guidance and encouragement throughout this B.A. 4th Semester project. I am deeply thankful to the <strong>residents of Dalimbari Gaon</strong> — the farmers, traders, school teachers, and community members — who generously shared their time, knowledge, and experiences during the field visit. Special thanks to the <strong>local village headman (Gaon Bura)</strong> and community elders for their invaluable insights into the village's history and development journey. This project would not have been possible without the support of my <strong>family, college classmates, and the Department of Geography</strong>.
+          </div>
+        </div>
+
+        <!-- End decoration -->
+        <div class="lux-ornament" style="margin-top: 32px;">— ✦ END OF PROJECT ✦ —</div>
+
+        <div style="text-align: center; margin-top: 16px;">
+          <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: #ffb3d0;">
+            "Every village is a universe — understanding it is the first step toward transforming it."
+          </div>
+          <div style="font-size: 0.82rem; color: rgba(255,182,217,0.65); margin-top: 10px; letter-spacing: 0.06em; font-weight: 600;">
+            — R. Sangma &nbsp;|&nbsp; B.A. 4th Semester &nbsp;|&nbsp; Department of Geography
+          </div>
+          <div style="font-size: 0.75rem; color: rgba(255,182,217,0.4); margin-top: 5px; letter-spacing: 0.08em;">
+            Field Study Project on Dalimbari Gaon, West Karbi Anglong, Assam
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end main-wrapper -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">🌸 Dalimbari Gaon</div>
+      <div class="footer-text" style="margin-bottom: 6px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.95rem; color: #ffb3d0;">
+        Socio-Economic Development Project · Geography Field Study
+      </div>
+      <div class="footer-text" style="margin-bottom: 4px;">
+        <strong style="color: #ffb3d0;">R. Sangma</strong> &nbsp;·&nbsp; B.A. 4th Semester · Department of Geography
+      </div>
+      <div class="footer-text">
+        West Karbi Anglong District, Assam, India &nbsp;·&nbsp; Academic Year 2024–2025
+      </div>
+      <div style="margin-top: 16px; border-top: 1px solid rgba(255,105,180,0.15); padding-top: 16px; font-size: 0.72rem; color: rgba(255,182,217,0.4); letter-spacing: 0.1em;">
+        A COMPREHENSIVE 10-PAGE FIELD STUDY PROJECT IN GEOGRAPHY · © R. SANGMA
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ======================== WATERMARK GENERATOR ========================
+    (function generateWatermark() {
+      const grid = document.getElementById('watermarkGrid');
+      if (!grid) return;
+      // Fill a large grid of watermark items
+      const rows = 8;
+      const cols = 3;
+      for (let i = 0; i < rows * cols; i++) {
+        const item = document.createElement('div');
+        item.classList.add('watermark-tile-item');
+        item.textContent = 'R. Sangma';
+        grid.appendChild(item);
+      }
+    })();
+
+    // ======================== PARTICLES ========================
+    function createParticles() {
+      const container = document.getElementById('particles');
+      const count = 25;
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.classList.add('particle');
+        const size = Math.random() * 60 + 15;
+        const left = Math.random() * 100;
+        const duration = Math.random() * 18 + 12;
+        const delay = Math.random() * 20;
+        p.style.cssText = `
+          width: ${size}px;
+          height: ${size}px;
+          left: ${left}%;
+          animation-duration: ${duration}s;
+          animation-delay: ${delay}s;
+          opacity: ${Math.random() * 0.4 + 0.05};
+        `;
+        container.appendChild(p);
+      }
+    }
+    createParticles();
+
+    // ======================== SCROLL BAR ========================
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      document.getElementById('scrollBar').style.width = scrollPercent + '%';
+    });
+
+    // ======================== INTERSECTION OBSERVER ========================
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.glass-card, .info-box, .challenge-card, .stat-card, .rec-box, .bib-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+      observer.observe(el);
+    });
+
+    // Keep cover visible
+    document.querySelectorAll('.cover-card').forEach(el => {
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    });
+
+    // ======================== SMOOTH SCROLL NAV ========================
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ======================== ACTIVE NAV HIGHLIGHT ========================
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sTop = section.offsetTop - 100;
+        if (window.scrollY >= sTop) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.style.background = '';
+        link.style.borderColor = 'transparent';
+        link.style.color = '#ffd6ea';
+        if (link.getAttribute('href') === '#' + current) {
+          link.style.background = 'rgba(255,105,180,0.25)';
+          link.style.borderColor = 'rgba(255,105,180,0.5)';
+          link.style.color = '#fff';
+        }
+      });
+    });
+
+    // ======================== PIE CHART (conic-gradient) ========================
+    // Occupation distribution for potential pie chart
+    const pieData = [
+      { label: 'Agriculture', pct: 50, color: '#f759ab' },
+      { label: 'Wage Labour', pct: 25, color: '#ff85c2' },
+      { label: 'Tea Garden', pct: 12, color: '#eb2f96' },
+      { label: 'Business', pct: 8, color: '#c41d7f' },
+      { label: 'Others', pct: 5, color: '#ffb3d0' },
+    ];
+
+    // ======================== COUNTER ANIMATION ========================
+    function animateCounter(el, target, duration) {
+      let start = 0;
+      const step = target / (duration / 16);
+      const timer = setInterval(() => {
+        start += step;
+        if (start >= target) {
+          el.textContent = target;
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(start);
+        }
+      }, 16);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const statNumbers = entry.target.querySelectorAll('.stat-number');
+          statNumbers.forEach(el => {
+            const val = parseInt(el.textContent);
+            if (!isNaN(val)) {
+              el.textContent = '0';
+              animateCounter(el, val, 1000);
+            }
+          });
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.stats-grid').forEach(grid => counterObserver.observe(grid));
+
+    // ======================== LUXURY TOUCH — Cursor Glow ========================
+    document.addEventListener('mousemove', (e) => {
+      const glow = document.createElement('div');
+      glow.style.cssText = `
+        position: fixed;
+        pointer-events: none;
+        width: 8px; height: 8px;
+        background: rgba(255,105,180,0.6);
+        border-radius: 50%;
+        left: ${e.clientX - 4}px;
+        top: ${e.clientY - 4}px;
+        z-index: 9999;
+        transition: all 0.3s;
+        animation: fadeOut 0.6s ease forwards;
+      `;
+      document.body.appendChild(glow);
+      setTimeout(() => glow.remove(), 600);
+    });
+
+    const style = document.createElement('style');
+    style.textContent = '@keyframes fadeOut { to { opacity: 0; transform: scale(3); } }';
+    document.head.appendChild(style);
+
+  </script>
+</body>
+</html>
