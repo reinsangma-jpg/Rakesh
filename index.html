@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pink">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Field Report on Socio-Economic Development of Dalimbari Gaon, West Karbi Anglong, Assam</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+--bg:#1a0a12;--bg2:#2a1020;--bg3:#3a1530;
+--glass:rgba(255,200,220,.08);--glass2:rgba(255,200,220,.14);--glassB:rgba(255,200,220,.18);
+--txt:#fff0f5;--txt2:#e0b8c8;--txt3:#b08898;
+--acc:#ff69b4;--accH:#ff85c8;--accL:rgba(255,105,180,.15);--accG:rgba(255,105,180,.3);
+--brd:rgba(255,105,180,.2);--sh:0 8px 32px rgba(255,105,180,.1);
+--hdr:rgba(30,10,20,.85);--slBg:rgba(255,200,220,.06);
+--grad:linear-gradient(135deg,#1a0a12,#2a1020,#1a0a12);
+--heroGrad:linear-gradient(135deg,rgba(255,105,180,.08),rgba(255,105,180,.02),rgba(255,200,220,.06));
+}
+[data-theme="light"]{
+--bg:#f5f0f2;--bg2:#ebe0e5;--bg3:#e0d0d8;
+--glass:rgba(255,255,255,.55);--glass2:rgba(255,255,255,.7);--glassB:rgba(255,255,255,.85);
+--txt:#2d1b2e;--txt2:#5a3a50;--txt3:#8a6a80;
+--acc:#d63384;--accH:#b02a6e;--accL:rgba(214,51,132,.1);--accG:rgba(214,51,132,.2);
+--brd:rgba(214,51,132,.15);--sh:0 8px 32px rgba(0,0,0,.06);
+--hdr:rgba(245,240,242,.88);--slBg:rgba(255,255,255,.5);
+--grad:linear-gradient(135deg,#f5f0f2,#ebe0e5,#f5f0f2);
+--heroGrad:linear-gradient(135deg,rgba(214,51,132,.06),rgba(255,255,255,.02),rgba(214,51,132,.04));
+}
+[data-theme="dark"]{
+--bg:#0d0d1a;--bg2:#141428;--bg3:#1a1a35;
+--glass:rgba(100,100,180,.08);--glass2:rgba(100,100,180,.14);--glassB:rgba(100,100,180,.2);
+--txt:#e8e0f0;--txt2:#b8a8d0;--txt3:#8878a0;
+--acc:#a78bfa;--accH:#8b6ff0;--accL:rgba(167,139,250,.12);--accG:rgba(167,139,250,.25);
+--brd:rgba(167,139,250,.15);--sh:0 8px 32px rgba(167,139,250,.08);
+--hdr:rgba(13,13,26,.9);--slBg:rgba(100,100,180,.06);
+--grad:linear-gradient(135deg,#0d0d1a,#141428,#0d0d1a);
+--heroGrad:linear-gradient(135deg,rgba(167,139,250,.06),rgba(167,139,250,.02),rgba(167,139,250,.04));
+}
+[data-theme="green"]{
+--bg:#0a1a0e;--bg2:#0f2a15;--bg3:#153a1c;
+--glass:rgba(46,204,113,.06);--glass2:rgba(46,204,113,.12);--glassB:rgba(46,204,113,.18);
+--txt:#e0f5e8;--txt2:#a8d8b0;--txt3:#78a880;
+--acc:#2ecc71;--accH:#27ae60;--accL:rgba(46,204,113,.12);--accG:rgba(46,204,113,.25);
+--brd:rgba(46,204,113,.18);--sh:0 8px 32px rgba(46,204,113,.08);
+--hdr:rgba(10,26,14,.9);--slBg:rgba(46,204,113,.06);
+--grad:linear-gradient(135deg,#0a1a0e,#0f2a15,#0a1a0e);
+--heroGrad:linear-gradient(135deg,rgba(46,204,113,.06),rgba(46,204,113,.02),rgba(46,204,113,.04));
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;transition:background .5s,color .5s;overflow-x:hidden}
+
+body::before,body::after{content:'';position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(100px);opacity:.35;transition:background .5s}
+body::before{width:500px;height:500px;top:-100px;right:-100px;background:var(--accG)}
+body::after{width:400px;height:400px;bottom:-80px;left:-80px;background:var(--accG)}
+@media(max-width:600px){body::before{width:250px;height:250px}body::after{width:200px;height:200px}}
+
+#watermark{position:fixed;inset:0;z-index:1;pointer-events:none;user-select:none;overflow:hidden;width:100vw;height:100vh}
+#watermark span{position:absolute;font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:700;color:var(--acc);opacity:.055;white-space:nowrap;letter-spacing:.1em;transform:rotate(-30deg);display:block}
+@media(max-width:600px){#watermark span{font-size:2.2rem}}
+
+#welcomePopup{position:fixed;inset:0;z-index:100000;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0a0008 0%,#1a0515 30%,#0d0008 60%,#1a0515 100%);transition:opacity .8s ease,visibility .8s ease}
+#welcomePopup.hide{opacity:0;visibility:hidden;pointer-events:none}
+.wpop-glow{position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,105,180,.15),transparent 70%);filter:blur(60px);animation:wpopPulse 4s ease-in-out infinite alternate}
+@keyframes wpopPulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.3);opacity:.8}}
+.wpop-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,105,180,.5);box-shadow:0 0 60px rgba(255,105,180,.3),0 0 120px rgba(255,105,180,.1);margin-bottom:24px;position:relative;z-index:2}
+.wpop-title{color:#ffd6eb;font-size:1.35rem;font-weight:600;text-align:center;max-width:480px;line-height:1.5;font-family:'Playfair Display',serif;margin-bottom:8px;position:relative;z-index:2}
+.wpop-sub{color:#c090b0;font-size:.88rem;margin-bottom:20px;text-align:center;position:relative;z-index:2}
+.wpop-count{font-size:3rem;font-weight:700;color:#ff69b4;text-shadow:0 0 30px rgba(255,105,180,.5);font-family:'Playfair Display',serif;position:relative;z-index:2}
+.wpop-sparks{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.wpop-sparks i{position:absolute;display:block;width:3px;height:3px;border-radius:50%;background:#ff69b4;opacity:0;animation:sparkFloat 5s linear infinite}
+@keyframes sparkFloat{0%{opacity:0;transform:translateY(100vh) scale(0)}20%{opacity:.8}80%{opacity:.8}100%{opacity:0;transform:translateY(-10vh) scale(1)}}
+
+.hdr{position:sticky;top:0;z-index:5000;background:var(--hdr);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);border-bottom:1px solid var(--brd);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;transition:background .5s}
+.hdr-logo{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--acc);display:flex;align-items:center;gap:8px;flex-shrink:0}
+.hdr-nav{display:flex;align-items:center;gap:3px;flex-wrap:wrap}
+.hdr-nav a{font-size:.72rem;color:var(--txt2);text-decoration:none;padding:5px 8px;border-radius:16px;transition:all .25s;white-space:nowrap}
+.hdr-nav a:hover,.hdr-nav a:focus{background:var(--accL);color:var(--acc)}
+.theme-bar{display:flex;gap:5px;margin-left:8px;flex-shrink:0}
+.tbtn{width:22px;height:22px;border-radius:50%;border:2px solid var(--brd);cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.tbtn:hover{transform:scale(1.25)}
+.tbtn.on{border-color:var(--acc);transform:scale(1.25);box-shadow:0 0 10px var(--accG)}
+.tbtn.tp{background:linear-gradient(135deg,#ff69b4,#e91e8c)}
+.tbtn.tl{background:linear-gradient(135deg,#fff,#eee)}
+.tbtn.td{background:linear-gradient(135deg,#1a1a2e,#2d2d4e)}
+.tbtn.tg{background:linear-gradient(135deg,#2ecc71,#27ae60)}
+.mob-btn{display:none;background:none;border:none;color:var(--txt);cursor:pointer;font-size:1.3rem;padding:4px}
+@media(max-width:900px){
+.mob-btn{display:block}
+.hdr-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--hdr);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);flex-direction:column;padding:10px 16px;border-bottom:1px solid var(--brd);gap:2px}
+.hdr-nav.open{display:flex}
+.hdr-nav a{padding:8px 12px;font-size:.82rem}
+.theme-bar{margin:8px 0 4px}
+}
+
+.gcard{background:var(--glass2);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border:1px solid var(--brd);border-radius:20px;padding:28px;margin-bottom:24px;box-shadow:var(--sh);transition:all .4s;position:relative;z-index:2;overflow:hidden}
+.gcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accG),transparent)}
+.gcard:hover{box-shadow:0 12px 40px var(--accG);border-color:var(--acc);transform:translateY(-2px)}
+.gcard-t{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;color:var(--txt);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.gcard p{color:var(--txt2);font-size:.9rem;line-height:1.78;margin-bottom:10px}
+.gcard p:last-child{margin-bottom:0}
+.gcard ul,.gcard ol{color:var(--txt2);font-size:.9rem;line-height:1.78;margin-bottom:10px;padding-left:20px}
+.gcard li{margin-bottom:4px}
+.hl{color:var(--acc);font-weight:600}
+
+.sec{max-width:920px;margin:0 auto;padding:56px 22px;position:relative;z-index:2}
+.sec-center{text-align:center}
+.sec-num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--acc);color:#fff;font-size:.82rem;font-weight:600;margin-bottom:14px;box-shadow:0 0 20px var(--accG)}
+.sec-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--txt);margin-bottom:6px}
+.sec-sub{color:var(--txt3);font-size:.9rem;margin-bottom:28px}
+.divider{max-width:920px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:10px;position:relative;z-index:2}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--brd),transparent)}
+.divider span{color:var(--acc);font-size:1rem}
+
+.hero{min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 22px;background:var(--heroGrad);position:relative;overflow:hidden}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;opacity:.4;animation:orbFloat 8s ease-in-out infinite alternate}
+.hero-orb.o1{width:350px;height:350px;top:-80px;right:-60px;background:var(--accG)}
+.hero-orb.o2{width:250px;height:250px;bottom:-40px;left:-40px;background:var(--accG);animation-delay:3s}
+.hero-orb.o3{width:180px;height:180px;top:40%;left:60%;background:var(--accG);animation-delay:5s}
+@keyframes orbFloat{0%{transform:translate(0,0) scale(1)}100%{transform:translate(20px,-20px) scale(1.15)}}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:40px;background:var(--glass2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--brd);color:var(--acc);font-size:.78rem;font-weight:500;margin-bottom:24px;position:relative;z-index:2}
+.hero-title{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;line-height:1.18;margin-bottom:18px;position:relative;z-index:2}
+.hero-title span{color:var(--acc);text-shadow:0 0 30px var(--accG)}
+.hero-desc{font-size:1rem;color:var(--txt2);max-width:600px;margin-bottom:28px;position:relative;z-index:2}
+.hero-metas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;position:relative;z-index:2}
+.hero-m{display:flex;flex-direction:column;align-items:center;gap:3px;padding:16px 22px;background:var(--glass2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:14px;border:1px solid var(--brd);min-width:130px;transition:all .3s}
+.hero-m:hover{border-color:var(--acc);box-shadow:0 0 20px var(--accG)}
+.hero-m .lb{font-size:.7rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.05em}
+.hero-m .vl{font-size:.85rem;font-weight:600;color:var(--txt)}
+@media(max-width:600px){.hero-title{font-size:1.7rem}.hero-m{min-width:100px;padding:12px 14px}}
+
+.fbox{background:var(--glass2);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border:1px solid var(--brd);border-radius:22px;padding:36px;max-width:700px;margin:0 auto;position:relative;z-index:2;overflow:hidden}
+.fbox::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accG),transparent)}
+.fbox::after{content:'';position:absolute;top:10px;left:10px;right:10px;bottom:10px;border:1px dashed var(--brd);border-radius:16px;pointer-events:none}
+.fbox h2{font-family:'Playfair Display',serif;text-align:center;font-size:1.5rem;margin-bottom:20px;color:var(--acc);position:relative;z-index:1}
+.fbox p{color:var(--txt2);font-size:.9rem;line-height:1.8;margin-bottom:12px;position:relative;z-index:1}
+.sig{text-align:right;margin-top:28px;font-style:italic;color:var(--txt);font-weight:500;position:relative;z-index:1}
+
+.idx{list-style:none;counter-reset:idx}
+.idx li{counter-increment:idx;display:flex;align-items:center;gap:12px;padding:11px 16px;border-bottom:1px solid var(--brd);transition:all .25s}
+.idx li:hover{background:var(--accL);border-radius:10px}
+.idx li::before{content:counter(idx);display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;font-size:.75rem;font-weight:600;flex-shrink:0}
+.idx li a{color:var(--txt);text-decoration:none;font-weight:500;font-size:.86rem;flex:1}
+.idx li a:hover{color:var(--acc)}
+.idx li .pg{color:var(--txt3);font-size:.72rem}
+
+.obj-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:600px){.obj-grid{grid-template-columns:1fr}}
+.obj-item{display:flex;align-items:flex-start;gap:10px;padding:16px;background:var(--glass2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--brd);border-radius:14px;font-size:.86rem;color:var(--txt2);line-height:1.6;transition:all .3s}
+.obj-item:hover{border-color:var(--acc);box-shadow:0 4px 20px var(--accG)}
+.obj-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;background:var(--accL);display:flex;align-items:center;justify-content:center;color:var(--acc);font-weight:700;font-size:.8rem}
+
+.img-slider{position:relative;margin:18px 0;border-radius:16px;overflow:hidden;background:var(--slBg);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--brd)}
+.sl-viewport{overflow:hidden;border-radius:16px}
+.sl-track{display:flex;transition:transform .45s cubic-bezier(.25,.8,.25,1)}
+.sl-slide{min-width:100%;position:relative;cursor:zoom-in}
+.sl-slide img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.sl-slide .cap{position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;font-size:.8rem;font-weight:500}
+.sl-btn{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.4);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all .25s;z-index:3}
+.sl-btn:hover{background:var(--acc);border-color:var(--acc);box-shadow:0 0 15px var(--accG)}
+.sl-btn.prev{left:10px}
+.sl-btn.next{right:10px}
+.sl-dots{display:flex;justify-content:center;gap:5px;padding:8px 0}
+.sl-dot{width:8px;height:8px;border-radius:50%;background:var(--brd);border:none;cursor:pointer;transition:all .25s}
+.sl-dot.on{background:var(--acc);width:22px;border-radius:4px;box-shadow:0 0 8px var(--accG)}
+
+.simg{border-radius:16px;overflow:hidden;margin:18px 0;border:1px solid var(--brd);cursor:zoom-in;transition:all .3s}
+.simg:hover{border-color:var(--acc);box-shadow:0 4px 20px var(--accG)}
+.simg img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.simg .cap{padding:9px 14px;background:var(--slBg);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:.8rem;color:var(--txt2);text-align:center}
+
+#lightbox{position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;flex-direction:column;opacity:0;transition:opacity .3s}
+#lightbox.show{display:flex;opacity:1}
+#lightbox img{max-width:92vw;max-height:82vh;object-fit:contain;border-radius:12px;box-shadow:0 0 60px rgba(0,0,0,.5);transition:transform .3s;cursor:grab;user-select:none}
+#lightbox img.zoomed{transform:scale(2);cursor:zoom-out}
+.lb-close{position:absolute;top:20px;right:24px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;z-index:4}
+.lb-close:hover{background:var(--acc);border-color:var(--acc)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;z-index:4}
+.lb-nav:hover{background:var(--acc);border-color:var(--acc)}
+.lb-nav.lb-prev{left:16px}
+.lb-nav.lb-next{right:16px}
+.lb-hint{color:rgba(255,255,255,.4);font-size:.75rem;margin-top:12px;text-align:center}
+.lb-counter{color:rgba(255,255,255,.5);font-size:.8rem;margin-top:6px}
+
+.find-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:700px){.find-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.find-grid{grid-template-columns:1fr}}
+.find-card{background:var(--glass2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--brd);border-radius:16px;padding:20px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.find-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accG),transparent)}
+.find-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px var(--accG);border-color:var(--acc)}
+.find-card .fn{font-size:1.6rem;font-weight:700;color:var(--acc);margin-bottom:4px;font-family:'Playfair Display',serif}
+.find-card .fd{font-size:.8rem;color:var(--txt2);line-height:1.5}
+
+.sug-list{list-style:none;counter-reset:sug}
+.sug-list li{counter-increment:sug;display:flex;align-items:flex-start;gap:10px;padding:12px 0;border-bottom:1px solid var(--brd);font-size:.88rem;color:var(--txt2);line-height:1.7}
+.sug-list li::before{content:counter(sug);flex-shrink:0;width:26px;height:26px;border-radius:7px;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:600;margin-top:2px}
+
+.bib-list{list-style:none}
+.bib-list li{padding:9px 0;border-bottom:1px solid var(--brd);font-size:.84rem;color:var(--txt2);line-height:1.6;display:flex;gap:8px}
+.bib-list li .bn{color:var(--acc);font-weight:600;flex-shrink:0}
+
+.ftr{background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--brd);padding:36px 22px;text-align:center;position:relative;z-index:2}
+.ftr-wm{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:600;color:var(--acc);opacity:.7;margin-bottom:6px;letter-spacing:.04em}
+.ftr-txt{font-size:.78rem;color:var(--txt3)}
+
+#btt{position:fixed;bottom:24px;right:24px;width:44px;height:44px;border-radius:50%;background:var(--glass2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--acc);border:1px solid var(--brd);cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 4px 20px var(--accG);z-index:400;transition:all .3s}
+#btt.show{display:flex}
+#btt:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+
+.sec-ill{width:56px;height:56px;border-radius:16px;background:var(--accL);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:1.5rem;border:1px solid var(--brd)}
+
+.sub-section{margin-top:18px;padding-top:18px;border-top:1px solid var(--brd)}
+.sub-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--acc);margin-bottom:8px}
+
+@media(max-width:600px){
+.sec-title{font-size:1.55rem}
+.fbox{padding:22px}
+.hero-m{min-width:100px}
+}
+</style>
+</head>
+<body>
+
+<div id="watermark"></div>
+
+<!-- WELCOME POPUP -->
+<div id="welcomePopup">
+  <div class="wpop-sparks" id="sparkBox"></div>
+  <div class="wpop-glow" style="top:20%;left:10%"></div>
+  <div class="wpop-glow" style="bottom:10%;right:5%;animation-delay:2s"></div>
+  <img src="https://i.ibb.co/d4mNP0YV/file-00000000fd9c720bbe6e382457111446.png" alt="Reinhardson Sangma" class="wpop-photo">
+  <div class="wpop-title">You are most welcome to Reinhardson Sangma's website!</div>
+  <div class="wpop-sub">The website will automatically load within 10 seconds.</div>
+  <div class="wpop-count" id="cdNum">10</div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button class="lb-close" id="lbClose">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev">&#10094;</button>
+  <button class="lb-nav lb-next" id="lbNext">&#10095;</button>
+  <img id="lbImg" src="" alt="Fullscreen view">
+  <div class="lb-hint">Click image to zoom · Swipe or use arrows to navigate</div>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr">
+  <div class="hdr-logo">✦ Dalimbari Field Report</div>
+  <button class="mob-btn" id="mobBtn" aria-label="Menu">☰</button>
+  <nav class="hdr-nav" id="hdrNav">
+    <a href="#cover">Cover</a>
+    <a href="#certificate">Certificate</a>
+    <a href="#declaration">Declaration</a>
+    <a href="#acknowledgement">Acknowledgement</a>
+    <a href="#indexSec">Index</a>
+    <a href="#introduction">Introduction</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#demographic">Demography</a>
+    <a href="#economic">Economy</a>
+    <a href="#education">Education</a>
+    <a href="#infrastructure">Infrastructure</a>
+    <a href="#govtschemes">Govt Schemes</a>
+    <a href="#cultural">Culture</a>
+    <a href="#environment">Environment</a>
+    <a href="#findings">Findings</a>
+    <a href="#suggestions">Suggestions</a>
+    <a href="#conclusion">Conclusion</a>
+    <a href="#bibliography">Bibliography</a>
+    <div class="theme-bar">
+      <button class="tbtn tp on" data-t="pink" title="Pink Mode"></button>
+      <button class="tbtn tl" data-t="light" title="Light Mode"></button>
+      <button class="tbtn td" data-t="dark" title="Dark Mode"></button>
+      <button class="tbtn tg" data-t="green" title="Green Mode"></button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== COVER PAGE ===== -->
+<section class="hero sec" id="cover">
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+  <div class="hero-orb o3"></div>
+  <div class="hero-badge">🎓 Field Study Project Report</div>
+  <h1 class="hero-title">A Field Report on the<br>Socio-Economic Development of<br><span>Dalimbari Gaon</span></h1>
+  <p class="hero-desc">West Karbi Anglong, Assam — A comprehensive field study exploring the social fabric, economic activities, infrastructure, and development trajectory of Dalimbari village.</p>
+  <div class="hero-metas">
+    <div class="hero-m"><span class="lb">Prepared By</span><span class="vl">Reinhardson Sangma<br>&amp; Rakesh Dewri</span></div>
+    <div class="hero-m"><span class="lb">District</span><span class="vl">West Karbi Anglong</span></div>
+    <div class="hero-m"><span class="lb">State</span><span class="vl">Assam</span></div>
+    <div class="hero-m"><span class="lb">Year</span><span class="vl">2025</span></div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== CERTIFICATE ===== -->
+<section class="sec" id="certificate">
+  <div class="sec-center"><div class="sec-num">2</div></div>
+  <h2 class="sec-title sec-center">Certificate</h2>
+  <p class="sec-sub sec-center">Official certification of the project work</p>
+  <div class="fbox">
+    <h2>CERTIFICATE</h2>
+    <p>This is to certify that <span class="hl">Reinhardson Sangma</span> and <span class="hl">Rakesh Dewri</span> have successfully completed the field study project entitled <strong>"A Field Report on the Socio-Economic Development of Dalimbari Gaon, West Karbi Anglong, Assam"</strong> under my guidance and supervision.</p>
+    <p>The study reflects genuine effort, careful observation, and thoughtful analysis of the socio-economic conditions prevailing in Dalimbari village. The findings and suggestions presented in this report are based on first-hand data collected during the field visit.</p>
+    <p>This project is being submitted as partial fulfilment of the requirements for the academic curriculum.</p>
+    <div class="sig">Supervisor's Signature<br><span style="font-size:.83rem;color:var(--txt3)">Date: ___________</span></div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== DECLARATION ===== -->
+<section class="sec" id="declaration">
+  <div class="sec-center"><div class="sec-num">3</div></div>
+  <h2 class="sec-title sec-center">Declaration</h2>
+  <p class="sec-sub sec-center">A statement of originality and authenticity</p>
+  <div class="fbox">
+    <h2>DECLARATION</h2>
+    <p>We, <span class="hl">Reinhardson Sangma</span> and <span class="hl">Rakesh Dewri</span>, hereby declare that the project entitled <strong>"A Field Report on the Socio-Economic Development of Dalimbari Gaon, West Karbi Anglong, Assam"</strong> is an original piece of work carried out by us.</p>
+    <p>The information, data, and photographs presented in this report have been personally collected during our field visit to Dalimbari Gaon. No part of this project has been plagiarised from any other source. All references used have been duly acknowledged in the bibliography section.</p>
+    <p>We take full responsibility for the content and authenticity of this study.</p>
+    <div class="sig">Reinhardson Sangma &amp; Rakesh Dewri<br><span style="font-size:.83rem;color:var(--txt3)">Date: ___________</span></div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== ACKNOWLEDGEMENT ===== -->
+<section class="sec" id="acknowledgement">
+  <div class="sec-center"><div class="sec-num">4</div></div>
+  <h2 class="sec-title sec-center">Acknowledgement</h2>
+  <p class="sec-sub sec-center">Gratitude to everyone who made this study possible</p>
+  <div class="gcard">
+    <div class="sec-ill">🙏</div>
+    <p>Completing this field study has been a truly enriching experience, and it wouldn't have been possible without the support and kindness of many people.</p>
+    <p>First and foremost, we would like to express our heartfelt gratitude to the <span class="hl">people of Dalimbari Gaon</span> — for welcoming us with open arms, sharing their stories, and allowing us to photograph their daily lives. Their warmth and honesty made this study far more meaningful than any textbook ever could.</p>
+    <p>We are deeply thankful to our <span class="hl">supervisor and teachers</span> for their guidance, patience, and constant encouragement throughout the project.</p>
+    <p>A special thanks goes to our <span class="hl">friends</span> who accompanied us during the field visit — your company made even the longest walks enjoyable, and your help with data collection was invaluable.</p>
+    <p>Finally, we wish to thank our <span class="hl">families</span> for their unwavering support and understanding, and for always believing in us.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== INDEX ===== -->
+<section class="sec" id="indexSec">
+  <div class="sec-center"><div class="sec-num">5</div></div>
+  <h2 class="sec-title sec-center">Index / Contents</h2>
+  <p class="sec-sub sec-center">Quick navigation to all sections of this report</p>
+  <div class="gcard" style="padding:10px">
+    <ol class="idx">
+      <li><a href="#cover">Cover Page</a><span class="pg">Top</span></li>
+      <li><a href="#certificate">Certificate</a><span class="pg">§2</span></li>
+      <li><a href="#declaration">Declaration</a><span class="pg">§3</span></li>
+      <li><a href="#acknowledgement">Acknowledgement</a><span class="pg">§4</span></li>
+      <li><a href="#indexSec">Index / Contents</a><span class="pg">§5</span></li>
+      <li><a href="#introduction">Introduction</a><span class="pg">§6</span></li>
+      <li><a href="#objectives">Objectives of the Study</a><span class="pg">§7</span></li>
+      <li><a href="#methodology">Methodology</a><span class="pg">§8</span></li>
+      <li><a href="#demographic">Demographic and Social Structure</a><span class="pg">§9</span></li>
+      <li><a href="#economic">Economic Activities</a><span class="pg">§10</span></li>
+      <li><a href="#education">Educational Condition</a><span class="pg">§11</span></li>
+      <li><a href="#infrastructure">Infrastructure and Public Facilities</a><span class="pg">§12</span></li>
+      <li><a href="#govtschemes">Government Schemes and Rural Development</a><span class="pg">§13</span></li>
+      <li><a href="#cultural">Cultural and Religious Life</a><span class="pg">§14</span></li>
+      <li><a href="#environment">Environmental Challenges</a><span class="pg">§15</span></li>
+      <li><a href="#findings">Findings of the Study</a><span class="pg">§16</span></li>
+      <li><a href="#suggestions">Suggestions</a><span class="pg">§17</span></li>
+      <li><a href="#conclusion">Conclusion</a><span class="pg">§18</span></li>
+      <li><a href="#bibliography">Bibliography</a><span class="pg">§19</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 1. INTRODUCTION ===== -->
+<section class="sec" id="introduction">
+  <div class="sec-center"><div class="sec-num">6</div></div>
+  <h2 class="sec-title sec-center">1. Introduction</h2>
+  <p class="sec-sub sec-center">Setting the context for the study</p>
+  <div class="gcard">
+    <div class="sec-ill">🏘️</div>
+    <p><span class="hl">Dalimbari Gaon</span> is a rural village located in the West Karbi Anglong district of Assam. The village is surrounded by hills, forests, agricultural land, and small water sources. The people of the village mainly depend on agriculture, daily wage labour, animal husbandry, and small businesses for their livelihood.</p>
+    <p>This field study was conducted to understand the social, economic, educational, cultural, and infrastructural condition of the village. The study also aimed to examine the challenges faced by the villagers and the role of government schemes in rural development.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 2. OBJECTIVES ===== -->
+<section class="sec" id="objectives">
+  <div class="sec-center"><div class="sec-num">7</div></div>
+  <h2 class="sec-title sec-center">2. Objectives of the Study</h2>
+  <p class="sec-sub sec-center">What this study sets out to achieve</p>
+  <div class="obj-grid">
+    <div class="obj-item"><div class="obj-icon">1</div>To study the <strong>demographic and social composition</strong> of Dalimbari Gaon.</div>
+    <div class="obj-item"><div class="obj-icon">2</div>To examine the <strong>economic activities</strong> such as agriculture, tea cultivation, and small trade.</div>
+    <div class="obj-item"><div class="obj-icon">3</div>To assess the condition of <strong>infrastructure</strong> including roads, water supply, electricity, and healthcare facilities.</div>
+    <div class="obj-item"><div class="obj-icon">4</div>To understand the role of <strong>educational institutions</strong> in community development.</div>
+    <div class="obj-item"><div class="obj-icon">5</div>To evaluate the <strong>impact of government schemes</strong> on village development.</div>
+    <div class="obj-item"><div class="obj-icon">6</div>To explore the <strong>religious and cultural practices</strong> of the people.</div>
+    <div class="obj-item"><div class="obj-icon">7</div>To identify <strong>environmental and developmental challenges</strong> faced by the village.</div>
+    <div class="obj-item"><div class="obj-icon">8</div>To provide <strong>suggestions</strong> for the socio-economic development of Dalimbari Gaon.</div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 3. METHODOLOGY ===== -->
+<section class="sec" id="methodology">
+  <div class="sec-center"><div class="sec-num">8</div></div>
+  <h2 class="sec-title sec-center">3. Methodology</h2>
+  <p class="sec-sub sec-center">How the study was conducted</p>
+  <div class="gcard">
+    <div class="sec-ill">🔬</div>
+    <p>The methodology adopted for this field study was mainly <span class="hl">qualitative and field-based</span>. Direct observation and interaction with the villagers were used to collect information about the socio-economic condition of the village.</p>
+    <p><strong>Methods of Data Collection:</strong></p>
+    <p><strong>a) Personal Observation:</strong> The village environment, housing condition, roads, agricultural activities, and social interactions were carefully observed during the field visit.</p>
+    <p><strong>b) Interviews:</strong> Informal interviews were conducted with villagers, farmers, teachers, local leaders, shopkeepers, and youths to gather information about their lifestyle and problems.</p>
+    <p><strong>c) Photographic Documentation:</strong> Photographs of important places such as schools, roads, religious places, markets, agricultural fields, and rivers were collected to support the study.</p>
+    <p><strong>d) Secondary Sources:</strong> Information was also collected from census reports, government websites, books, newspapers, and online articles related to rural development and West Karbi Anglong district.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 4. DEMOGRAPHIC AND SOCIAL STRUCTURE ===== -->
+<section class="sec" id="demographic">
+  <div class="sec-center"><div class="sec-num">9</div></div>
+  <h2 class="sec-title sec-center">4. Demographic and Social Structure</h2>
+  <p class="sec-sub sec-center">Understanding the people and their way of life</p>
+  <div class="gcard">
+    <div class="sec-ill">👨‍👩‍👧‍👦</div>
+    <p>Dalimbari Gaon is mainly inhabited by <span class="hl">tribal and rural communities</span>. Most families live in small households and maintain close social relationships with one another. The villagers live peacefully and cooperate during festivals, agricultural work, and social functions.</p>
+    <p>Traditional customs and cultural practices are still preserved in the village. Elders are respected, and community participation plays an important role in maintaining social harmony.</p>
+  </div>
+  <!-- Friends gallery -->
+  <div class="gcard">
+    <div class="gcard-t">👫 Friends &amp; Field Companions</div>
+    <p>No field study is complete without the people who walk beside you. These are some of the wonderful friends who accompanied us during the field visit — making the journey memorable and the data collection possible.</p>
+    <div class="img-slider" data-sl>
+      <div class="sl-viewport"><div class="sl-track">
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/Q7Mf69dQ/IMG20260516110340.jpg"><img src="https://i.ibb.co/Q7Mf69dQ/IMG20260516110340.jpg" alt="Friend 1"><div class="cap">Together on the field — memories that last a lifetime</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/7Npd9q45/IMG20260516104955.jpg"><img src="https://i.ibb.co/7Npd9q45/IMG20260516104955.jpg" alt="Friend 2"><div class="cap">Exploring the village paths with great company</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/Dg8bgVHL/IMG-20260516-WA0047.jpg"><img src="https://i.ibb.co/Dg8bgVHL/IMG-20260516-WA0047.jpg" alt="Friend 3"><div class="cap">Friends who make every walk worthwhile</div></div>
+      </div></div>
+      <button class="sl-btn prev" aria-label="Previous">&#10094;</button>
+      <button class="sl-btn next" aria-label="Next">&#10095;</button>
+      <div class="sl-dots"></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 5. ECONOMIC ACTIVITIES ===== -->
+<section class="sec" id="economic">
+  <div class="sec-center"><div class="sec-num">10</div></div>
+  <h2 class="sec-title sec-center">5. Economic Activities</h2>
+  <p class="sec-sub sec-center">Livelihoods and income sources of the village</p>
+  <div class="gcard">
+    <div class="sec-ill">💰</div>
+    <p>Agriculture is the primary occupation of the people of Dalimbari Gaon. The major crops cultivated in the village include:</p>
+    <ul>
+      <li>Rice</li>
+      <li>Maize</li>
+      <li>Vegetables</li>
+      <li>Ginger</li>
+      <li>Pulses</li>
+    </ul>
+    <p>Many villagers also engage in:</p>
+    <ul>
+      <li>Tea cultivation</li>
+      <li>Pig farming</li>
+      <li>Poultry farming</li>
+      <li>Daily wage labour</li>
+      <li>Small business activities</li>
+    </ul>
+    <p>Women also contribute significantly to household income through farming, weaving, and livestock care.</p>
+    <p>However, the income level of many families remains low due to lack of modern agricultural technology, poor market access, and seasonal unemployment.</p>
+  </div>
+  <!-- Market -->
+  <div class="gcard">
+    <div class="gcard-t">🏪 Village Market</div>
+    <p>The local market of Dalimbari is the economic pulse of the village. It's where farmers sell their produce, shopkeepers display everyday essentials, and the community gathers not just to trade but to exchange news and stories. The market attracts buyers and sellers from neighbouring villages as well, making it a microcosm of the rural economy in action.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/JWN641Kg/IMG-20260516-WA0157.jpg">
+      <img src="https://i.ibb.co/JWN641Kg/IMG-20260516-WA0157.jpg" alt="Market">
+      <div class="cap">Bustling market day in Dalimbari</div>
+    </div>
+  </div>
+  <!-- Agriculture -->
+  <div class="gcard">
+    <div class="gcard-t">🌾 Tea, Agriculture &amp; Betel-Nut Plantation</div>
+    <p>The village is surrounded by lush green tea gardens that provide employment to many local families. Betel-nut (areca nut) plantations are another major source of income, with the tall, slender areca palms forming a defining feature of the landscape. Paddy cultivation during the monsoon season ensures food security, while vegetable gardens supplement both nutrition and income.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/LzXCWHWp/IMG-20260516-WA0198.jpg">
+      <img src="https://i.ibb.co/LzXCWHWp/IMG-20260516-WA0198.jpg" alt="Agriculture">
+      <div class="cap">Agricultural landscape — the backbone of Dalimbari's economy</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 6. EDUCATIONAL CONDITION ===== -->
+<section class="sec" id="education">
+  <div class="sec-center"><div class="sec-num">11</div></div>
+  <h2 class="sec-title sec-center">6. Educational Condition</h2>
+  <p class="sec-sub sec-center">The state of learning and literacy in the village</p>
+  <div class="gcard">
+    <div class="sec-ill">📚</div>
+    <p>Educational awareness in the village is gradually improving. Primary schools are available nearby, and some students travel to nearby towns for higher education.</p>
+    <p>Teachers and parents are encouraging children to continue their studies. However, several educational problems still exist:</p>
+    <ul>
+      <li>Lack of higher educational institutions</li>
+      <li>Financial difficulties among poor families</li>
+      <li>Transportation problems</li>
+      <li>Limited access to digital learning facilities</li>
+    </ul>
+    <p>Despite these challenges, the literacy rate is slowly increasing.</p>
+  </div>
+  <!-- Schools slider -->
+  <div class="gcard">
+    <div class="gcard-t">🏫 Educational Institutions of Dalimbari</div>
+    <p>Dalimbari is served by multiple schools that cater to different levels of learning. From primary schools that lay the foundation to higher-level institutions that prepare students for the world beyond, these schools represent hope and aspiration. The four major schools in and around Dalimbari are showcased below.</p>
+    <div class="img-slider" data-sl>
+      <div class="sl-viewport"><div class="sl-track">
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/v7gjpw7/IMG-20260516-WA0213.jpg"><img src="https://i.ibb.co/v7gjpw7/IMG-20260516-WA0213.jpg" alt="Vivekananda School"><div class="cap">Vivekananda School — nurturing young minds</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/qYJ7pNSg/IMG-20260516-WA0189.jpg"><img src="https://i.ibb.co/qYJ7pNSg/IMG-20260516-WA0189.jpg" alt="Adarsha Vidyalaya"><div class="cap">Adarsha Vidyalaya — a centre of learning</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/hqNvGG5/IMG-20260516-WA0168.jpg"><img src="https://i.ibb.co/hqNvGG5/IMG-20260516-WA0168.jpg" alt="Chinanadi L.P. School"><div class="cap">Chinanadi L.P. School — where it all begins</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/W4ChPr9p/IMG-20260516-WA0225.jpg"><img src="https://i.ibb.co/W4ChPr9p/IMG-20260516-WA0225.jpg" alt="Songomot Chinani L.P. School"><div class="cap">Songomot Chinani L.P. School — building foundations</div></div>
+      </div></div>
+      <button class="sl-btn prev" aria-label="Previous">&#10094;</button>
+      <button class="sl-btn next" aria-label="Next">&#10095;</button>
+      <div class="sl-dots"></div>
+    </div>
+  </div>
+  <!-- Playground -->
+  <div class="gcard">
+    <div class="gcard-t">⚽ Village Playground</div>
+    <p>Every village needs a playground, and Dalimbari's open field serves as exactly that. From cricket matches to casual evening kickabouts, this space is where children learn teamwork and simply enjoy being young. Investing in better sports infrastructure here could go a long way in nurturing talent and keeping youth engaged.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/WpG8Fp2z/IMG-20260516-WA0171.jpg">
+      <img src="https://i.ibb.co/WpG8Fp2z/IMG-20260516-WA0171.jpg" alt="Playground">
+      <div class="cap">The village playground — where dreams take flight</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 7. INFRASTRUCTURE ===== -->
+<section class="sec" id="infrastructure">
+  <div class="sec-center"><div class="sec-num">12</div></div>
+  <h2 class="sec-title sec-center">7. Infrastructure and Public Facilities</h2>
+  <p class="sec-sub sec-center">Roads, electricity, water, healthcare, and public institutions</p>
+
+  <div class="gcard">
+    <div class="gcard-t">🛤️ Roads and Transportation</div>
+    <p>Road connectivity has improved in recent years, but some roads become muddy and difficult during the rainy season. Transportation remains a challenge, especially for students and patients who need to travel to nearby towns.</p>
+  </div>
+
+  <div class="gcard">
+    <div class="gcard-t">💡 Electricity</div>
+    <p>Most households have electricity connections, though power cuts are still common in some areas. The availability of electricity has improved the quality of life, but reliability remains an issue.</p>
+  </div>
+
+  <div class="gcard">
+    <div class="gcard-t">🚰 Water Supply</div>
+    <p>People mainly depend on tube wells, hand pumps, and natural water sources for drinking water. The <span class="hl">Jal Jeevan Mission</span> has started making an impact by providing piped water connections to households, as seen in the images below.</p>
+    <div class="img-slider" data-sl>
+      <div class="sl-viewport"><div class="sl-track">
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/Wv48rjF5/IMG-20260516-WA0205.jpg"><img src="https://i.ibb.co/Wv48rjF5/IMG-20260516-WA0205.jpg" alt="JJM 1"><div class="cap">Jal Jeevan Mission infrastructure in the village</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/NgYq8tby/IMG-20260516-WA0178.jpg"><img src="https://i.ibb.co/NgYq8tby/IMG-20260516-WA0178.jpg" alt="JJM 2"><div class="cap">Water supply connections reaching households</div></div>
+      </div></div>
+      <button class="sl-btn prev" aria-label="Previous">&#10094;</button>
+      <button class="sl-btn next" aria-label="Next">&#10095;</button>
+      <div class="sl-dots"></div>
+    </div>
+  </div>
+
+  <div class="gcard">
+    <div class="gcard-t">🏥 Healthcare</div>
+    <p>Healthcare facilities are limited. Villagers often travel to nearby towns or health centres for medical treatment. The health sub-centre is the first point of medical contact for most residents, staffed by an ANM and visiting doctors on specific days.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/xthWNx2c/IMG-20260516-WA0196.jpg">
+      <img src="https://i.ibb.co/xthWNx2c/IMG-20260516-WA0196.jpg" alt="Sub-Centre">
+      <div class="cap">The health sub-centre serving the village community</div>
+    </div>
+  </div>
+
+  <div class="gcard">
+    <div class="gcard-t">🚔 Dalimbari Police Station</div>
+    <p>The Dalimbari Police Station serves as the law enforcement hub for the village and surrounding areas. It plays a crucial role in maintaining peace and order, resolving disputes, and ensuring the safety of residents. The station also serves as a point of contact for various government schemes and identity document services.</p>
+    <div class="img-slider" data-sl>
+      <div class="sl-viewport"><div class="sl-track">
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/HfBTpBHq/IMG-20260516-WA0200.jpg"><img src="https://i.ibb.co/HfBTpBHq/IMG-20260516-WA0200.jpg" alt="Police 1"><div class="cap">Dalimbari Police Station — front view</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/nsSk6DJn/IMG-20260516-WA0199.jpg"><img src="https://i.ibb.co/nsSk6DJn/IMG-20260516-WA0199.jpg" alt="Police 2"><div class="cap">The station premises</div></div>
+      </div></div>
+      <button class="sl-btn prev" aria-label="Previous">&#10094;</button>
+      <button class="sl-btn next" aria-label="Next">&#10095;</button>
+      <div class="sl-dots"></div>
+    </div>
+  </div>
+
+  <div class="gcard">
+    <div class="gcard-t">🏛️ Dalimbari First I.B.</div>
+    <p>The Dalimbari First Inspection Bungalow (I.B.) is a historic structure that has served as a government rest house for decades. Originally built during the British colonial era, it continues to accommodate travelling officials today. Its colonial-era architecture, though weathered by time, still carries a certain grandeur that makes it one of the notable landmarks of the village.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/fzQxm2kH/IMG-20260516-WA0102.jpg">
+      <img src="https://i.ibb.co/fzQxm2kH/IMG-20260516-WA0102.jpg" alt="First I.B.">
+      <div class="cap">Dalimbari First I.B. — a piece of colonial-era heritage</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 8. GOVERNMENT SCHEMES ===== -->
+<section class="sec" id="govtschemes">
+  <div class="sec-center"><div class="sec-num">13</div></div>
+  <h2 class="sec-title sec-center">8. Government Schemes and Rural Development</h2>
+  <p class="sec-sub sec-center">The role of government programmes in village development</p>
+  <div class="gcard">
+    <div class="sec-ill">🏛️</div>
+    <p>Government schemes have contributed to the development of Dalimbari Gaon. Some important schemes benefiting the villagers include:</p>
+    <ul>
+      <li><strong>MGNREGA</strong> — providing employment guarantee to rural households</li>
+      <li><strong>PMAY (Pradhan Mantri Awas Yojana)</strong> — improving housing conditions</li>
+      <li><strong>Jal Jeevan Mission</strong> — providing piped drinking water to households</li>
+      <li><strong>Rural road development schemes</strong> — improving connectivity</li>
+    </ul>
+    <p>These programmes have helped improve housing conditions, employment opportunities, drinking water facilities, and infrastructure development. However, the reach and effectiveness of these schemes vary, and many villagers feel that more needs to be done.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 9. CULTURAL AND RELIGIOUS LIFE ===== -->
+<section class="sec" id="cultural">
+  <div class="sec-center"><div class="sec-num">14</div></div>
+  <h2 class="sec-title sec-center">9. Cultural and Religious Life</h2>
+  <p class="sec-sub sec-center">Traditions, faith, and community bonding</p>
+  <div class="gcard">
+    <div class="sec-ill">🛐</div>
+    <p>The people of Dalimbari Gaon actively participate in traditional and religious festivals. Cultural programmes, community feasts, and traditional dances are important parts of village life.</p>
+    <p>Religious institutions and social gatherings help strengthen unity and cooperation among the villagers. The coexistence of a church and a Kali Mandir within the same village is a beautiful testament to the communal harmony that defines Dalimbari.</p>
+  </div>
+  <!-- Church -->
+  <div class="gcard">
+    <div class="gcard-t">⛪ Church — The Heart of Faith</div>
+    <p>The church in Dalimbari is more than just a place of worship — it's the spiritual anchor of the Christian community in the village. On Sundays, the sound of hymns fills the air, drawing families together in prayer and fellowship. The church also plays a vital social role, organising community events, charity drives, and youth programmes.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/B5VcmZCj/IMG-20260516-WA0170.jpg">
+      <img src="https://i.ibb.co/B5VcmZCj/IMG-20260516-WA0170.jpg" alt="Church">
+      <div class="cap">The church standing tall as a symbol of faith and community</div>
+    </div>
+  </div>
+  <!-- Kali Mandir -->
+  <div class="gcard">
+    <div class="gcard-t">🛕 Kali Mandir — A Hindu Shrine</div>
+    <p>The Kali Mandir in Dalimbari is a significant place of worship for the Hindu community. Dedicated to Goddess Kali, the temple comes alive during festivals, especially Kali Puja, when the entire village — regardless of religion — participates in the celebrations.</p>
+    <div class="img-slider" data-sl>
+      <div class="sl-viewport"><div class="sl-track">
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/JwwnRGCW/IMG-20260516-WA0162.jpg"><img src="https://i.ibb.co/JwwnRGCW/IMG-20260516-WA0162.jpg" alt="Kali Mandir 1"><div class="cap">The entrance to the Kali Mandir</div></div>
+        <div class="sl-slide" data-lbsrc="https://i.ibb.co/XkzdHzhZ/IMG-20260516-WA0163.jpg"><img src="https://i.ibb.co/XkzdHzhZ/IMG-20260516-WA0163.jpg" alt="Kali Mandir 2"><div class="cap">The temple premises during the field visit</div></div>
+      </div></div>
+      <button class="sl-btn prev" aria-label="Previous">&#10094;</button>
+      <button class="sl-btn next" aria-label="Next">&#10095;</button>
+      <div class="sl-dots"></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 10. ENVIRONMENTAL CHALLENGES ===== -->
+<section class="sec" id="environment">
+  <div class="sec-center"><div class="sec-num">15</div></div>
+  <h2 class="sec-title sec-center">10. Environmental Challenges</h2>
+  <p class="sec-sub sec-center">Threats to the natural environment and village sustainability</p>
+  <div class="gcard">
+    <div class="sec-ill">🌍</div>
+    <p>The village faces several environmental and developmental challenges such as:</p>
+    <ul>
+      <li>Deforestation</li>
+      <li>Soil erosion</li>
+      <li>Poor road condition during monsoon</li>
+      <li>Lack of employment opportunities</li>
+      <li>Limited healthcare facilities</li>
+      <li>Poverty among some households</li>
+    </ul>
+    <p>These challenges affect the overall socio-economic development of the village.</p>
+  </div>
+  <!-- Mining -->
+  <div class="gcard">
+    <div class="gcard-t">⛏️ Mining &amp; Deforestation</div>
+    <p>Stone quarrying and sand mining in the region have led to significant loss of forest cover, soil erosion, and disruption of local water bodies. While these activities provide short-term employment and revenue, the long-term ecological cost is staggering. Residents expressed growing concern about the diminishing green cover and the increasing frequency of floods. Sustainable alternatives and stricter regulations are urgently needed.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/Rk9kNfT5/IMG-20260516-WA0179.jpg">
+      <img src="https://i.ibb.co/Rk9kNfT5/IMG-20260516-WA0179.jpg" alt="Mining">
+      <div class="cap">Mining activity and its visible environmental impact</div>
+    </div>
+  </div>
+  <!-- Naudubi River -->
+  <div class="gcard">
+    <div class="gcard-t">🏞️ Naudubi River</div>
+    <p>The <span class="hl">Naudubi River</span> is one of the most important natural features of Dalimbari. It provides water for irrigation, supports local fishing, and serves as a recreational spot. However, like many rivers in Assam, the Naudubi is also prone to flooding during the monsoon season, causing damage to crops and property. During our visit, the river was calm and picturesque — a stark contrast to the fury it can unleash during the rains.</p>
+    <div class="simg" data-lbsrc="https://i.ibb.co/RkyN0yPg/IMG-20260516-WA0176.jpg">
+      <img src="https://i.ibb.co/RkyN0yPg/IMG-20260516-WA0176.jpg" alt="Naudubi River">
+      <div class="cap">The serene Naudubi River flowing through Dalimbari</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 11. FINDINGS ===== -->
+<section class="sec" id="findings">
+  <div class="sec-center"><div class="sec-num">16</div></div>
+  <h2 class="sec-title sec-center">11. Findings of the Study</h2>
+  <p class="sec-sub sec-center">Key insights drawn from the field study</p>
+  <div class="find-grid">
+    <div class="find-card"><div class="fn">🌾</div><div class="fd">Agriculture remains the backbone of the village economy</div></div>
+    <div class="find-card"><div class="fn">📈</div><div class="fd">Educational awareness is increasing gradually</div></div>
+    <div class="find-card"><div class="fn">🏗️</div><div class="fd">Government schemes are helping improve living conditions</div></div>
+    <div class="find-card"><div class="fn">🛤️</div><div class="fd">Infrastructure development is progressing slowly</div></div>
+    <div class="find-card"><div class="fn">⚠️</div><div class="fd">Unemployment and poverty still affect many families</div></div>
+    <div class="find-card"><div class="fn">🎭</div><div class="fd">Cultural traditions remain strong among the villagers</div></div>
+  </div>
+  <div class="gcard" style="margin-top:22px">
+    <p>The field study revealed that agriculture remains the backbone of the village economy. Educational awareness is increasing gradually, and government schemes are helping improve living conditions. Infrastructure development is progressing slowly, but unemployment and poverty still affect many families. Cultural traditions remain strong among the villagers, providing a foundation of social cohesion that can be leveraged for collective development efforts.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 12. SUGGESTIONS ===== -->
+<section class="sec" id="suggestions">
+  <div class="sec-center"><div class="sec-num">17</div></div>
+  <h2 class="sec-title sec-center">12. Suggestions</h2>
+  <p class="sec-sub sec-center">Measures to improve the socio-economic condition of Dalimbari Gaon</p>
+  <ol class="sug-list">
+    <li><strong>Improvement of road and transportation facilities</strong> — so that villagers can access markets, schools, and hospitals more easily throughout the year.</li>
+    <li><strong>Establishment of better healthcare centres</strong> — with full-time doctors and basic diagnostic equipment to reduce dependence on distant town hospitals.</li>
+    <li><strong>Promotion of modern agricultural techniques</strong> — to increase productivity and reduce the physical burden on farmers.</li>
+    <li><strong>Development of skill training programmes for youth</strong> — in areas like computer literacy, tailoring, food processing, and handicrafts to diversify income sources.</li>
+    <li><strong>Better educational facilities and digital access</strong> — upgrading school infrastructure and providing digital learning tools to bridge the urban-rural education gap.</li>
+    <li><strong>Increased employment opportunities through rural industries</strong> — promoting small-scale and cottage industries that leverage local resources and skills.</li>
+    <li><strong>Environmental protection and afforestation programmes</strong> — to counter the damage caused by mining and deforestation and ensure long-term ecological sustainability.</li>
+  </ol>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 13. CONCLUSION ===== -->
+<section class="sec" id="conclusion">
+  <div class="sec-center"><div class="sec-num">18</div></div>
+  <h2 class="sec-title sec-center">13. Conclusion</h2>
+  <p class="sec-sub sec-center">Bringing it all together</p>
+  <div class="gcard">
+    <div class="sec-ill">🌟</div>
+    <p>Dalimbari Gaon is gradually progressing in terms of education, infrastructure, and rural development. Agriculture continues to be the main source of livelihood, while government schemes have positively impacted the village economy.</p>
+    <p>However, challenges such as unemployment, poor healthcare, and environmental problems still remain. With proper planning, awareness, and continued government support, Dalimbari Gaon can achieve sustainable socio-economic development in the future.</p>
+    <p>The village has the basic building blocks of progress — schools, a market, a police station, a health sub-centre, and a community that genuinely cares for one another. What it needs now is targeted investment, better governance, and a long-term vision that prioritises sustainability over short-term gains. The people of Dalimbari deserve nothing less.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<!-- ===== 14. BIBLIOGRAPHY ===== -->
+<section class="sec" id="bibliography">
+  <div class="sec-center"><div class="sec-num">19</div></div>
+  <h2 class="sec-title sec-center">14. Bibliography</h2>
+  <p class="sec-sub sec-center">Sources and references consulted</p>
+  <div class="gcard">
+    <ul class="bib-list">
+      <li><span class="bn">1.</span>Census of India, 2011 — Village-level demographic data for West Karbi Anglong district, Assam.</li>
+      <li><span class="bn">2.</span>Jal Jeevan Mission, Ministry of Jal Shakti — Official dashboard and progress reports (jjm.gov.in).</li>
+      <li><span class="bn">3.</span>District Handbook of Statistics, West Karbi Anglong — Government of Assam publication.</li>
+      <li><span class="bn">4.</span>"Rural Development in Assam: Challenges and Opportunities" — Journal of North-East India Studies, Vol. 8, 2020.</li>
+      <li><span class="bn">5.</span>National Rural Health Mission (NRHM) — Assam state report on rural health infrastructure.</li>
+      <li><span class="bn">6.</span>Assam State Disaster Management Authority (ASDMA) — Flood risk assessment reports.</li>
+      <li><span class="bn">7.</span>Personal interviews and field observations conducted during the visit to Dalimbari Gaon, May 2025.</li>
+      <li><span class="bn">8.</span>Sarva Shiksha Abhiyan (SSA), Assam — Data on school infrastructure and enrolment.</li>
+      <li><span class="bn">9.</span>"Environmental Impact of Stone Quarrying in Assam" — Environmental Research Journal, 2019.</li>
+      <li><span class="bn">10.</span>MGNREGA Official Reports — Ministry of Rural Development, Government of India.</li>
+      <li><span class="bn">11.</span>Pradhan Mantri Awas Yojana (PMAY) — Implementation status report for Assam.</li>
+      <li><span class="bn">12.</span>District Administration, West Karbi Anglong — Office records and development scheme data.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="ftr-wm">✦ R. SANGMA ✦</div>
+  <p class="ftr-txt">Prepared by <strong>Reinhardson Sangma</strong> &amp; <strong>Rakesh Dewri</strong></p>
+  <p class="ftr-txt" style="margin-top:4px">A Field Report on the Socio-Economic Development of Dalimbari Gaon, West Karbi Anglong, Assam © 2025</p>
+  <p class="ftr-txt" style="margin-top:4px;font-size:.72rem;opacity:.5">This report was prepared with care and respect for the people and places documented herein.</p>
+</footer>
+
+<button id="btt" aria-label="Back to top">&#9650;</button>
+
+<script>
+(function(){
+
+// ===== 10-SECOND WELCOME POPUP =====
+var popup=document.getElementById('welcomePopup');
+var cdEl=document.getElementById('cdNum');
+var sparkBox=document.getElementById('sparkBox');
+for(var i=0;i<50;i++){
+  var sp=document.createElement('i');
+  sp.style.left=Math.random()*100+'%';
+  sp.style.animationDelay=Math.random()*5+'s';
+  sp.style.animationDuration=(3+Math.random()*4)+'s';
+  var sz=2+Math.random()*4;sp.style.width=sz+'px';sp.style.height=sz+'px';
+  sparkBox.appendChild(sp);
+}
+var count=10;cdEl.textContent=count;
+var cdTimer=setInterval(function(){
+  count--;
+  if(count<=0){clearInterval(cdTimer);popup.classList.add('hide');}
+  else{cdEl.textContent=count;}
+},1000);
+
+
+// ===== THEME SWITCHER =====
+var tBtns=document.querySelectorAll('.tbtn');
+var htmlEl=document.documentElement;
+function setTheme(t){
+  htmlEl.setAttribute('data-theme',t);
+  for(var i=0;i<tBtns.length;i++){
+    if(tBtns[i].getAttribute('data-t')===t){tBtns[i].classList.add('on');}
+    else{tBtns[i].classList.remove('on');}
+  }
+  try{localStorage.setItem('dal-theme',t);}catch(e){}
+}
+var saved=localStorage.getItem('dal-theme');
+if(saved)setTheme(saved);
+for(var i=0;i<tBtns.length;i++){
+  tBtns[i].addEventListener('click',function(){setTheme(this.getAttribute('data-t'));});
+}
+
+
+// ===== IMAGE SLIDERS =====
+var sliders=document.querySelectorAll('[data-sl]');
+for(var s=0;s<sliders.length;s++){
+  (function(slider){
+    var track=slider.querySelector('.sl-track');
+    var slides=slider.querySelectorAll('.sl-slide');
+    var dotsBox=slider.querySelector('.sl-dots');
+    var prevBtn=slider.querySelector('.sl-btn.prev');
+    var nextBtn=slider.querySelector('.sl-btn.next');
+    var cur=0;var total=slides.length;
+
+    for(var d=0;d<total;d++){
+      var dot=document.createElement('button');
+      dot.className='sl-dot'+(d===0?' on':'');
+      dot.setAttribute('data-i',d);
+      dot.addEventListener('click',function(){goTo(parseInt(this.getAttribute('data-i')));});
+      dotsBox.appendChild(dot);
+    }
+
+    function goTo(idx){
+      cur=idx;
+      track.style.transform='translateX(-'+(cur*100)+'%)';
+      var dots=dotsBox.querySelectorAll('.sl-dot');
+      for(var j=0;j<dots.length;j++){
+        if(j===cur)dots[j].classList.add('on');
+        else dots[j].classList.remove('on');
+      }
+    }
+
+    prevBtn.addEventListener('click',function(e){e.stopPropagation();if(cur>0)goTo(cur-1);});
+    nextBtn.addEventListener('click',function(e){e.stopPropagation();if(cur<total-1)goTo(cur+1);});
+
+    var sx=0;
+    var vp=slider.querySelector('.sl-viewport');
+    vp.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+    vp.addEventListener('touchend',function(e){
+      var diff=sx-e.changedTouches[0].clientX;
+      if(Math.abs(diff)>50){
+        if(diff>0&&cur<total-1)goTo(cur+1);
+        else if(diff<0&&cur>0)goTo(cur-1);
+      }
+    },{passive:true});
+  })(sliders[s]);
+}
+
+
+// ===== FULLSCREEN LIGHTBOX =====
+var lb=document.getElementById('lightbox');
+var lbImg=document.getElementById('lbImg');
+var lbClose=document.getElementById('lbClose');
+var lbPrev=document.getElementById('lbPrev');
+var lbNext=document.getElementById('lbNext');
+var lbCounter=document.getElementById('lbCounter');
+var lbImgs=[];
+var lbIdx=0;
+var lbZoomed=false;
+
+function buildLbIndex(){
+  lbImgs=[];
+  var sims=document.querySelectorAll('.simg[data-lbsrc]');
+  for(var i=0;i<sims.length;i++){
+    (function(el,idx){
+      el.addEventListener('click',function(){openLb(idx);});
+      lbImgs.push(el.getAttribute('data-lbsrc'));
+    })(sims[i],lbImgs.length);
+  }
+  var slSlides=document.querySelectorAll('.sl-slide[data-lbsrc]');
+  for(var i=0;i<slSlides.length;i++){
+    (function(el,idx){
+      el.addEventListener('click',function(e){
+        if(e.target.classList.contains('sl-btn'))return;
+        openLb(idx);
+      });
+      lbImgs.push(el.getAttribute('data-lbsrc'));
+    })(slSlides[i],lbImgs.length);
+  }
+}
+
+function openLb(idx){
+  lbIdx=idx;showLbImg();
+  lb.classList.add('show');
+  document.body.style.overflow='hidden';
+}
+
+function showLbImg(){
+  lbImg.src=lbImgs[lbIdx];
+  lbImg.classList.remove('zoomed');lbZoomed=false;
+  lbCounter.textContent=(lbIdx+1)+' / '+lbImgs.length;
+}
+
+function closeLb(){
+  lb.classList.remove('show');
+  document.body.style.overflow='';
+  lbImg.classList.remove('zoomed');lbZoomed=false;
+}
+
+lbClose.addEventListener('click',closeLb);
+lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+lbPrev.addEventListener('click',function(e){e.stopPropagation();if(lbIdx>0){lbIdx--;showLbImg();}});
+lbNext.addEventListener('click',function(e){e.stopPropagation();if(lbIdx<lbImgs.length-1){lbIdx++;showLbImg();}});
+lbImg.addEventListener('click',function(e){
+  e.stopPropagation();
+  lbZoomed=!lbZoomed;
+  if(lbZoomed)lbImg.classList.add('zoomed');
+  else lbImg.classList.remove('zoomed');
+});
+
+document.addEventListener('keydown',function(e){
+  if(!lb.classList.contains('show'))return;
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft'&&lbIdx>0){lbIdx--;showLbImg();}
+  if(e.key==='ArrowRight'&&lbIdx<lbImgs.length-1){lbIdx++;showLbImg();}
+});
+
+var lbSx=0;
+lb.addEventListener('touchstart',function(e){lbSx=e.touches[0].clientX;},{passive:true});
+lb.addEventListener('touchend',function(e){
+  var diff=lbSx-e.changedTouches[0].clientX;
+  if(Math.abs(diff)>60){
+    if(diff>0&&lbIdx<lbImgs.length-1){lbIdx++;showLbImg();}
+    else if(diff<0&&lbIdx>0){lbIdx--;showLbImg();}
+  }
+},{passive:true});
+
+buildLbIndex();
+
+
+// ===== MOBILE NAV =====
+var mobBtn=document.getElementById('mobBtn');
+var hdrNav=document.getElementById('hdrNav');
+mobBtn.addEventListener('click',function(){hdrNav.classList.toggle('open');});
+var navLinks=hdrNav.querySelectorAll('a');
+for(var n=0;n<navLinks.length;n++){
+  navLinks[n].addEventListener('click',function(){hdrNav.classList.remove('open');});
+}
+
+
+// ===== BACK TO TOP =====
+var btt=document.getElementById('btt');
+window.addEventListener('scroll',function(){
+  if(window.scrollY>500)btt.classList.add('show');
+  else btt.classList.remove('show');
+});
+btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+
+// ===== FULLSCREEN TILED WATERMARK =====
+(function(){
+  var wm=document.getElementById('watermark');
+  function tileWatermark(){
+    wm.innerHTML='';
+    var W=window.innerWidth,H=window.innerHeight;
+    var colGap=320,rowGap=180;
+    for(var y=-colGap;y<H+colGap;y+=rowGap){
+      for(var x=-colGap;x<W+colGap;x+=colGap){
+        var s=document.createElement('span');
+        s.textContent='R. Sangma';
+        s.style.left=x+'px';
+        s.style.top=y+'px';
+        wm.appendChild(s);
+      }
+    }
+  }
+  tileWatermark();
+  window.addEventListener('resize',tileWatermark);
+})();
+
+
+})();</script>
+
+</body>
+</html>
